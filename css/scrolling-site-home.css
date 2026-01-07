@@ -1,0 +1,194 @@
+/* // =========while scrolling the site the content comes from bottom and any other direction js begins here==============
+// home page
+// featured items  */
+.carousel-track {
+    opacity: 0;
+    transform: translateY(60px);
+    transition: all 0.8s ease-out;
+}
+
+.carousel-track.show {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+
+
+/*  natural and self body care */
+.natural-care {
+    opacity: 0;
+    transform: translateY(60px);
+    transition: all 0.8s ease-out;
+}
+
+.natural-care.show {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+/* online store 5th section in home page begins */
+.online-storee {
+    opacity: 0;
+    transform: translateY(60px);
+    transition: all 0.8s ease-out;
+}
+
+.online-storee.show {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+/* align item centre  */
+.align-item-cntre-online-store {
+    opacity: 0;
+    transform: translateY(50px);
+    transition: all 0.8s ease-out;
+}
+
+.align-item-cntre-online-store.show {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+/* online store 5th section in home page ends  */
+
+
+/* gifts and bags section in 6th begins here */
+/* heading */
+.heading-gift-and-sets {
+    opacity: 0;
+    transform: translateY(50px);
+    transition: all 0.8s ease-out;
+}
+
+.heading-gift-and-sets.show {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+/* paragraph */
+.paragraph-gifts {
+    opacity: 0;
+    transform: translateY(50px);
+    transition: all 0.8s ease-out;
+}
+
+
+.paragraph-gifts.show {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+/* button */
+.read-btn {
+    opacity: 0;
+    transform: translateX(-60px);
+    transition: all 0.8s ease-out;
+}
+
+
+.read-btn.show {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+/* gift and bags section 6th ends here */
+
+
+/* premium skincare 7th section in home page BEGINS HERE */
+.premium-skincare {
+    opacity: 0;
+    transform: translateY(80px);
+    transition: all 0.8s ease-out;
+}
+
+.premium-skincare.show {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+/* align centre */
+.premium-skincare {
+    opacity: 0;
+    transform: translateY(50px);
+    transition: all 0.8s ease-out;
+}
+
+.premium-skincare.show {
+    opacity: 1;
+    transform: translate(0);
+}
+
+/* premium skincare 7th section in home page ENDS HERE */
+
+/* newsletter for news 8th section begins here */
+/* heading */
+.newsltr.heading {
+    opacity: 0;
+    transform: translateY(50px);
+    transition: all 0.8s ease-out;
+}
+
+.newsltr.heading.show {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+/* paragraph */
+.signup.and.news {
+    opacity: 0;
+    transform: translateY(50px);
+    transition: all 0.8s ease-out;
+}
+
+.signup.and.news.show {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+/* email address */
+.border-input.span {
+    opacity: 0;
+    transform: translateY(50px);
+    transition: all 0.8s ease-out;
+}
+
+.border-input.span.show {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+/* newletter for news 8th section ends here */
+
+/* footer in home begins here */
+/* .footer-content {
+    opacity: 0;
+    transform: translateY(50px);
+    transition: all 0.8s ease-out;
+} */
+
+/* .footer-content.show {
+    opacity: 1;
+    transform: translateY(0);
+} */
+
+/* at last copyright */
+/* .copyright {
+    opacity: 0;
+    transform: translateY(50px);
+    transition: all 0.8s ease-out;
+}
+
+.copyright.show {
+    opacity: 1;
+    transform: translate(0);
+} */
+
+
+
+/* footer in home ends here */
+
+
+
+
+/* WHILE SCROLLING THE SITE THE CONTENT COMES FROM BOTTOM AND DIFFERENT SIDES CSS */

@@ -1,0 +1,2022 @@
+@import url('https://fonts.googleapis.com/css2?family=Cedarville+Cursive&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Cedarville+Cursive&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Saira", sans-serif;
+}
+
+.container {
+    max-width: 1240px;
+    margin: 0 auto;
+}
+
+body {
+    background: #fff;
+}
+
+
+/* anchor tag */
+a {
+    text-decoration: none;
+    color: #5b6652;
+    text-transform: capitalize;
+}
+
+/* ul items */
+ul {
+    list-style: none;
+}
+
+/* top header small section at top of header */
+
+.top-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 8px 40px;
+    background-color: #f9f9f9;
+    border-bottom: 1px solid #eee;
+    font-size: 14px;
+    color: #5b6652;
+}
+
+/* Left side - social icons */
+.social-icons a {
+    color: #5b6652;
+    margin-right: 15px;
+    text-decoration: none;
+    font-size: 14px;
+    transition: color 0.3s ease;
+}
+
+.social-icons a:hover {
+    color: #000;
+}
+
+/* Center text */
+.delivery-text p {
+    text-align: center;
+    color: #5b6652;
+}
+
+.delivery-text a {
+    color: #000;
+    font-weight: bold;
+    text-decoration: underline;
+}
+
+/* Right side - wishlist/login */
+.user-options a {
+    color: #5b6652;
+    text-decoration: none;
+    margin-left: 20px;
+    transition: color 0.3s ease;
+}
+
+.user-options a:hover {
+    color: #000;
+}
+
+.user-options i {
+    margin-right: 5px;
+}
+
+/* top small header section ends here */
+
+/* site logo */
+.site-logo-skincare {
+    text-align: center;
+}
+
+img.skincare-logo {
+    width: 7%;
+    padding: 25px 0;
+}
+
+/* HEADER SECTION   main header */
+.main-header {
+    border-bottom: 1px solid #ddd;
+    background: #fff;
+}
+
+.navbar {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 20px 0;
+    position: relative;
+}
+
+.nav-menu {
+    list-style: none;
+    display: flex;
+    gap: 40px;
+    align-items: center;
+}
+
+.nav-menu li {
+    position: relative;
+}
+
+.nav-menu a {
+    text-decoration: none;
+    color: #2c3e3a;
+    font-weight: 500;
+    padding: 6px 10px;
+    transition: all 0.3s ease;
+}
+
+.nav-menu a:hover,
+.nav-menu a.active {
+    background: #eef1ec;
+    border-radius: 3px;
+}
+
+/* DROPDOWN MENU */
+.dropdown-menu {
+    position: absolute;
+    top: 45px;
+    left: 0;
+    background: #fff;
+    border-radius: 4px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    list-style: none;
+    min-width: 160px;
+    opacity: 0;
+    visibility: hidden;
+    transform: translateY(15px);
+    transition: all 0.3s ease;
+    z-index: 999;
+}
+
+.dropdown-menu li a {
+    display: block;
+    padding: 10px 15px;
+    color: #333;
+    text-decoration: none;
+    transition: all 0.3s ease;
+}
+
+.dropdown-menu li a:hover {
+    background: black;
+}
+
+/* SHOW DROPDOWN ON HOVER */
+.dropdown:hover>.dropdown-menu {
+    opacity: 1;
+    visibility: visible;
+    transform: translateY(0);
+}
+
+/* CART ICON */
+.cart-icon {
+    margin-left: 40px;
+    position: relative;
+    cursor: pointer;
+    font-size: 20px;
+    color: #2c3e3a;
+}
+
+.cart-count {
+    position: absolute;
+    top: -8px;
+    right: -8px;
+    background: #e74c3c;
+    color: #fff;
+    font-size: 11px;
+    font-weight: bold;
+    border-radius: 50%;
+    width: 16px;
+    height: 16px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* first section banner with 3 img in slider */
+/* 
+.slide img.makeup {
+    width: 100%;
+    height: 436px;
+    object-fit: cover;
+    display: block;
+    padding: 200px 0 0px 0px;
+}
+
+.content-in-slider {
+    position: absolute;
+    transform: translateY(-50%);
+    top: 353px;
+    left: 137px;
+}
+
+.content-in-slider span {
+    font-family: "Cedarville Cursive", cursive;
+    color: white;
+    font-size: 47px;
+}
+
+.content-in-slider p {
+    color: white;
+    font-size: 46px;
+    margin-top: 10px;
+    text-transform: capitalize;
+}
+
+.slide {
+    position: relative;
+    bottom: 133px;
+} */
+
+/* some css of section 2nd featured items starts here */
+/* hover effect in featured items  section 2nd */
+.card {
+    position: absolute;
+    width: 280px;
+    height: 380px;
+    background: #fff;
+    border-radius: 20px;
+    overflow: hidden;
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.15);
+    transition: all 0.8s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+    cursor: pointer;
+}
+
+/* image styling */
+.card img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+    transition: transform 0.6s ease;
+}
+
+/* hover content */
+.hover-content-items {
+    position: absolute;
+    inset: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: rgba(0, 0, 0, 0.6);
+    color: #fff;
+    opacity: 0;
+    transform: translateY(20px);
+    transition: all 0.5s ease;
+    text-align: center;
+}
+
+.hover-content-items h2 {
+    font-size: 28px;
+    font-family: "Poppins", sans-serif;
+    letter-spacing: 1px;
+}
+
+/* hover effect */
+.card:hover .hover-content-items {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+.card:hover img {
+    transform: scale(1.1);
+}
+
+/* price button in hver items */
+button.quick-view {
+    position: relative;
+    left: 155px;
+    transform: rotate(89deg);
+    background: white;
+    outline: navajowhite;
+    border: none;
+    border-radius: 8px;
+    padding: 6px;
+}
+
+button.quick-view a {
+    color: black;
+    text-decoration: none;
+    text-transform: capitalize;
+}
+
+span.price {
+    position: relative;
+    top: 158px;
+    /* text-align: center; */
+    left: -37px;
+}
+
+/* some css of section 2nd featured items ends here 2nd section*/
+
+
+
+/* <!-- natural and self body care section 3rd begins here  --> */
+
+.natural-care {
+    padding: 50px 0;
+    overflow: hidden;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 15px;
+}
+
+.row {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.col {
+    flex: 1 1 300px;
+    position: relative;
+    overflow: hidden;
+    border-radius: 10px;
+}
+
+.organic img {
+    width: 100%;
+    height: auto;
+    display: block;
+    border-radius: 10px;
+    transition: transform 0.4s ease;
+}
+
+.organic:hover img {
+    transform: scale(1.05);
+}
+
+.content-organic {
+    position: absolute;
+    bottom: 20px;
+    left: 20px;
+    color: #fff;
+    text-transform: uppercase;
+}
+
+.content-organic span {
+    font-size: 14px;
+    letter-spacing: 2px;
+}
+
+.content-organic h2 {
+    font-size: 28px;
+    margin-top: 5px;
+    font-weight: 700;
+}
+
+.organic::after {
+    content: "";
+    position: absolute;
+    inset: 0;
+    opacity: 0;
+    transition: opacity 0.4s ease;
+    border-radius: 10px;
+}
+
+.organic:hover::after {
+    opacity: 1;
+}
+
+
+/* <!-- iframe yt video section 4th begins here --> */
+
+.cosmetic-bg-img-iframe {
+    background-image: url(../images/h1-video-img-1-1536x520.jpg);
+    width: 100%;
+    height: 350px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.iframe {
+    position: relative;
+}
+
+.play-btn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 80px;
+    height: 80px;
+    margin: 568px;
+    border-radius: 50%;
+    border-color: 1px rgba(255, 255, 255, 0.8);
+    color: #746060;
+    font-size: 30px;
+    text-decoration: none;
+    transition: all 0.3s ease;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.3);
+}
+
+.play-btn:hover {
+    background: #ffdcdc;
+    transform: scale(1.1);
+}
+
+.play-btn::before {
+    content: "";
+    position: absolute;
+    width: 100px;
+    height: 100px;
+    border: 2px solid rgba(255, 255, 255, 0.6);
+    border-radius: 50%;
+    animation: pulse 1.5s infinite;
+}
+
+@keyframes pulse {
+    0% {
+        transform: scale(0.9);
+        opacity: 1;
+    }
+
+    100% {
+        transform: scale(1.5);
+        opacity: 0;
+    }
+}
+
+/* <!-- iframe yt video section 4th ends here --> */
+
+
+/* online store  section 5th begins here */
+/* online store  section 5th begins here */
+/* online store  section 5th begins here */
+
+section.online-storee {
+    padding: 50px 0px;
+    overflow: hidden;
+}
+
+.align-item-cntre-online-store {
+    text-align: center;
+
+}
+
+h4.your-store {
+    font-size: 37px;
+}
+
+h6.online-store-paragraph {
+    text-align: center;
+    font-weight: 300;
+    width: 62%;
+    margin-left: 176px;
+}
+
+.heading-leafs {
+    padding: 52px 0px;
+}
+
+h6.online-store-paragraph {
+    text-align: center;
+    font-weight: 300;
+    width: 62%;
+    margin-left: 176px;
+    color: #998c7e;
+}
+
+img.online-store-leaf {
+    width: 17%;
+}
+
+
+/*  */
+
+.product-card {
+    text-align: center;
+    margin-bottom: 40px;
+    transition: transform 0.3s ease;
+}
+
+.product-card:hover {
+    transform: translateY(-5px);
+}
+
+.product-card img {
+    width: 180px;
+    height: auto;
+    margin-bottom: 15px;
+}
+
+.stars {
+    color: #90b08f;
+    margin-bottom: 8px;
+}
+
+.product-name {
+    font-weight: 500;
+    font-size: 1.1rem;
+    margin-bottom: 5px;
+}
+
+.price-box {
+    position: relative;
+    display: inline-block;
+    font-size: 1rem;
+    color: #888;
+    font-weight: 500;
+    transition: color 0.3s ease;
+    cursor: pointer;
+}
+
+.price-box span {
+    display: block;
+    transition: opacity 0.3s ease;
+}
+
+.price-box .hover-text {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    opacity: 0;
+    color: #333;
+    font-weight: 600;
+}
+
+.price-box:hover .default-text {
+    opacity: 0;
+}
+
+.price-box:hover .hover-text {
+    opacity: 1;
+}
+
+/* <!-- online store section 5th begins ENDS 5th section  --> */
+
+
+
+
+
+
+/*   <!-- gift & bags section 6th starts here --> */
+
+section.gift-bagand.section {
+    background-image: url(../images/h1-parallax-img-1.jpg);
+    width: 100%;
+    height: 350px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+.background-gift-bag.\&.sets.image.text h2 {
+    padding: 47px 0px;
+    text-align: center;
+    font-family: 'Great Vibes', cursive;
+    font-size: 140px;
+    color: white;
+    text-transform: capitalize;
+}
+
+.background-gift-bag.\&.sets.image.text p {
+    color: white;
+    text-align: center;
+    font-size: 28px;
+}
+
+/* read more button  */
+.read-btn {
+    background: transparent;
+    color: #fff;
+    border: 2px solid #fff;
+    padding: 10px 30px;
+    font-size: 16px;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    cursor: pointer;
+    transition: all 0.4s ease;
+    position: relative;
+    z-index: 1;
+    overflow: hidden;
+    margin: 0px 0px 0px 499px;
+}
+
+.read-btn::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 0%;
+    height: 100%;
+    background-color: #fff;
+    transition: all 0.4s ease;
+    z-index: -1;
+}
+
+.read-btn:hover::before {
+    width: 100%;
+}
+
+.background-gift-bag.\&.sets.image.text {
+    position: relative;
+    bottom: 70px;
+}
+
+.read-btn:hover {
+    color: #000;
+}
+
+/*   <!-- gift & bags section 6th ends here --> */
+
+
+/*   <!-- premium skincare section 7th section begins here --> */
+
+
+section.premium-skincare {
+    padding: 60px 0px;
+}
+
+.align-centre {
+    text-align: center;
+}
+
+p.premium.skincare.paragraph.here.itis.begins {
+    width: 45%;
+    position: relative;
+    left: 329px;
+}
+
+
+.blog-card {
+    background: #fff;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.08);
+    transition: transform 0.3s ease;
+}
+
+.blog-card:hover {
+    transform: translateY(-5px);
+}
+
+.image-box {
+    position: relative;
+    overflow: hidden;
+}
+
+.image-box img {
+    width: 100%;
+    height: 250px;
+    object-fit: cover;
+    transition: transform 0.3s ease;
+}
+
+.blog-card:hover img {
+    transform: scale(1.05);
+}
+
+.date {
+    position: absolute;
+    right: 0px;
+    bottom: 35px;
+    background: #f3f3f3;
+    color: #666;
+    font-size: 13px;
+    font-weight: 500;
+    padding: 6px 9px;
+    border-radius: 0;
+    writing-mode: vertical-rl;
+    text-orientation: mixed;
+    bottom: 76px;
+}
+
+.content {
+    padding: 20px 20px 30px;
+}
+
+.category {
+    font-size: 14px;
+    color: #666;
+    margin-bottom: 10px;
+}
+
+.category a {
+    color: #68745c;
+    text-decoration: none;
+}
+
+.category a:hover {
+    text-decoration: underline;
+}
+
+h3 {
+    font-size: 20px;
+    font-weight: 600;
+    margin-bottom: 10px;
+}
+
+.desc {
+    font-size: 14px;
+    color: #777;
+    margin-bottom: 20px;
+    line-height: 1.6;
+}
+
+.read-more {
+    font-weight: 600;
+    text-decoration: none;
+    color: #787a74;
+    font-size: 14px;
+    border-bottom: 2px solid #becbac;
+    transition: 0.3s;
+}
+
+.read-more:hover {
+    color: #000000;
+    border-color: #000000;
+}
+
+.flex-blog-card {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 40px;
+    overflow: hidden;
+}
+
+/*   <!-- premium skincare section 7th section begins here --> */
+
+/*   <!-- newsletter for news 8th section begins here --> */
+/* input.wpcf7-form-control.wpcf7-email.wpcf7-validates-as-required.wpcf7-text.wpcf7-validates-as-email {
+    border: none;
+} */
+
+input[type=email],
+input[type=number],
+input[type=password],
+input[type=search],
+input[type=tel],
+input[type=text],
+input[type=url] {
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    font-family: Poppins, sans-serif;
+    font-size: 16px;
+    color: #68745c;
+    line-height: 27px;
+    font-weight: 600;
+    padding-left: 0;
+    padding-bottom: 2px;
+}
+
+input.wpcf7-form-control.wpcf7-email.wpcf7-validates-as-required.wpcf7-text.wpcf7-validates-as-email {
+    border-style: none;
+    outline: none;
+    border: none;
+    background: none;
+    margin: 0 0 0 -290px;
+}
+
+h2.newsltr.heading {
+    color: #93a286;
+    font-family: "Cedarville Cursive", cursive;
+    font-size: 34px;
+    letter-spacing: -1px;
+}
+
+p.signup.and.news {
+    font-size: 23px;
+    font-weight: 600;
+    font-family: "Saira", sans-serif;
+    color: #2f2337;
+}
+
+.background.news.letter.color {
+    background: #F8F9F7;
+    border-radius: 10px;
+    padding: 110px;
+}
+
+hr.underline {
+    margin: 0 0 0 131px;
+}
+
+/* subscribe button */
+.subscribe-btn {
+    background: linear-gradient(135deg, #bbd3bb, #9aa79a);
+    border: none;
+    padding: 12px 35px;
+    border-radius: 50px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 10px rgba(92, 184, 92, 0.3);
+    position: relative;
+    overflow: hidden;
+    margin: 51px;
+}
+
+.subscribe-btn a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: 600;
+    letter-spacing: 1px;
+    font-size: 16px;
+    text-transform: uppercase;
+    position: relative;
+    z-index: 2;
+}
+
+/* subtle shine hover effect */
+.subscribe-btn::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: -75%;
+    width: 50%;
+    height: 100%;
+    background: rgba(255, 255, 255, 0.4);
+    transform: skewX(-25deg);
+    transition: left 0.5s ease;
+}
+
+.subscribe-btn:hover::before {
+    left: 125%;
+}
+
+.subscribe-btn:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 6px 15px rgba(126, 141, 126, 0.4);
+}
+
+/*   <!-- newsletter for news 8th section ends here --> */
+
+/*   <!-- footer section 9th begins here --> */
+
+
+
+
+
+
+/*   <!-- footer section 9th ends here --> */
+
+/* footer top to bottom butotn fixed */
+.back-to-top {
+    position: fixed;
+    bottom: 30px;
+    right: -38px;
+    z-index: 100;
+    transform: rotate3d(1, 1, 10, -90deg);
+}
+
+.back-to-top a {
+    color: #fff;
+    text-decoration: none;
+}
+
+.top-btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+    text-decoration: none;
+    background: #b3b2b2;
+    color: #fff;
+    font-weight: 600;
+    padding: 12px 18px;
+    border-radius: 50px;
+    box-shadow: 0 0 10px rgba(255, 255, 255, 0.2);
+    transition: all 0.4s ease;
+    letter-spacing: 0.5px;
+}
+
+
+
+
+
+/* footer top to bottom butotn fixed ends here */
+
+
+
+
+/* ============================
+about page begins from here
+2nd section  testimonial section in about file section 2nd begins here in ABOUT page
+===============================
+*/
+
+.philosophy-section {
+    padding: 60px 0px;
+}
+
+.all.content-flex.here {
+    display: flex;
+    gap: 24px;
+}
+
+/* LEFT SIDE */
+.philosophy-left {
+    flex: 1 1 45%;
+}
+
+.philosophy-left h5 {
+    font-family: "Cedarville Cursive", cursive;
+    color: #9a9a84;
+    font-size: 33px;
+    margin-bottom: 8px;
+    font-weight: 100;
+}
+
+.philosophy-left h2 {
+    font-size: 40px;
+    font-weight: 600;
+    color: #2f3327;
+    margin-bottom: 20px;
+}
+
+.philosophy-left p {
+    color: #80827E;
+    font-size: 16px;
+    margin-bottom: 30px;
+    line-height: 21px;
+}
+
+.read-btn-more {
+    background: #fff;
+    border: 2px solid #b5b9aa;
+    padding: 10px 25px;
+    font-weight: 600;
+    font-size: 16px;
+    color: #444;
+    cursor: pointer;
+    position: relative;
+    transition: all 0.3s ease;
+}
+
+.read-btn-more::after {
+    content: "";
+    position: absolute;
+    bottom: -6px;
+    right: -6px;
+    width: 100%;
+    height: 100%;
+    background: #e5e7e0;
+    z-index: -1;
+    transition: all 0.3s ease;
+}
+
+.read-btn:hover {
+    background: #f7f7f3;
+}
+
+/* RIGHT SIDE */
+.accordion {
+    flex: 1 1 45%;
+}
+
+.accordion-item {
+    border-bottom: 1px solid #ddd;
+}
+
+.accordion-header {
+    font-weight: 600;
+    font-size: 16px;
+    padding: 15px 0;
+    cursor: pointer;
+    color: #666060;
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    transition: color 0.3s ease;
+}
+
+.accordion-header:hover {
+    color: #5b7553;
+}
+
+.accordion-content {
+    max-height: 0;
+    overflow: hidden;
+    color: #666;
+    font-size: 15px;
+    line-height: 1.6;
+    transition: max-height 0.3s ease;
+}
+
+.accordion-content p {
+    padding: 0 0 15px 0;
+    color: #80827E;
+
+}
+
+.accordion-header::after {
+    content: "\25BC";
+    font-size: 13px;
+    transition: transform 0.3s ease;
+}
+
+.accordion-item.active .accordion-header::after {
+    transform: rotate(180deg);
+}
+
+.accordion-item.active .accordion-content {
+    max-height: 200px;
+}
+
+/*  testimonial section in about file section 2nd ends here in ABOUT Page */
+
+
+/* <!-- newsletter for news 3rd section ends here --> */
+button.read-btn-more.form {
+    margin-top: 48px;
+}
+
+h2.newsltr.heading.cursive.font {
+    font-weight: 100;
+    font-size: 34px;
+    text-transform: capitalize;
+}
+
+/* <!-- newsletter for news 3rd section ends here --> */
+
+
+/* ================= */
+/*    <!-- gift bag and section 4th section begins here --> */
+
+
+section.gift.and.bag.dataaos.bg.img {
+    background-image: url(../images/about-us-parallax1-img.jpg);
+    width: 100%;
+    height: 760px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    padding: 60px 0px;
+}
+
+h2.quientin.font.family.used {
+    font-family: 'Quentin', cursive;
+    color: white;
+    font-size: 158px;
+    text-align: center;
+    padding-top: 131px;
+}
+
+h3.gift.and.sets.sub.heading {
+    color: #ffff;
+    text-align: center;
+    font-size: 32px;
+}
+
+/*    <!-- gift bag and section 4th section ends here --> */
+
+
+
+
+/*<!-- ========================footer ===================== -->
+<!-- =================================================== -->
+<!-- FOOTER BEGINS HERE --> */
+.footer-section {
+    background-color: #fff;
+    padding: 60px 0;
+    /* font-family: "Poppins", sans-serif; */
+    color: #333;
+}
+
+.footer-content {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(230px, 1fr));
+    gap: 40px;
+}
+
+.footer-box h3 {
+    color: #303030;
+    font-size: 18px;
+    font-weight: 600;
+    margin-bottom: 15px;
+    text-transform: capitalize;
+}
+
+.footer-box p {
+    color: #666;
+    font-size: 14px;
+    line-height: 1.6;
+}
+
+.footer-box ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.footer-box ul li {
+    font-size: 14px;
+    color: #555;
+    margin-bottom: 10px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.footer-box ul li i {
+    color: #5a5a5a;
+    font-size: 14px;
+}
+
+.payment-icons {
+    margin-top: 10px;
+    width: 180px;
+    height: auto;
+    filter: grayscale(10%);
+}
+
+
+/* copyright section at last in footer */
+.copyright img {
+    width: 32%;
+}
+
+.copyright {
+    display: flex;
+    align-items: center;
+    top: 20px;
+    position: relative;
+}
+
+ul.follow.links {
+    display: flex;
+    gap: 30px;
+    margin-left: 18px;
+    font-size: 12px;
+}
+
+h2.follow.us {
+    margin-left: 316px;
+    font-size: 16px;
+    font-weight: 100;
+    text-transform: capitalize;
+}
+
+hr.copyright-hr {
+    margin-top: 31px;
+}
+
+hr.footer-copyright {
+    width: 87%;
+    margin-left: 84px;
+}
+
+/* footer icons hover effect */
+ul.follow.links {
+    display: flex;
+    gap: 30px;
+    margin-left: 18px;
+    font-size: 12px;
+}
+
+ul.follow.links li a {
+    width: 35px;
+    height: 35px;
+    background: #f1f1f1;
+    /* light background */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    transition: all 0.3s ease;
+}
+
+ul.follow.links li a i {
+    font-size: 18px;
+    color: #333;
+    transition: all 0.3s ease;
+}
+
+/* BRAND HOVER COLORS */
+ul.follow.links li:nth-child(1) a:hover {
+    background: #1877F2;
+    /* Facebook */
+}
+
+ul.follow.links li:nth-child(1) a:hover i {
+    color: #fff;
+}
+
+ul.follow.links li:nth-child(2) a:hover {
+    background: #1DA1F2;
+    /* Twitter */
+}
+
+ul.follow.links li:nth-child(2) a:hover i {
+    color: #fff;
+}
+
+ul.follow.links li:nth-child(3) a:hover {
+    background: #E1306C;
+    /* Instagram */
+}
+
+ul.follow.links li:nth-child(3) a:hover i {
+    color: #fff;
+}
+
+
+
+
+/*<!-- ========================footer ===================== -->
+<!-- ================================================== -->
+<!-- FOOTER ENDS--> */
+
+
+
+
+
+
+
+
+/* ================================================================ */
+/* ==================PROCESS PAGES BEGINS FROM HERE================= */
+/* PROCESS IN PAGES HEADER BEGINS HERE */
+/* header inn pages file and process page */
+
+nav.navbar.flex {
+    display: flex;
+    justify-content: space-between;
+}
+
+/* PROCESS IN PAGES HEADER ENDS HERE */
+/* header inn pages file and process ENDS page */
+
+
+
+/* <!-- our process section 1st BEGINS here  --> */
+section.our.process.starts.here {
+    background-image: url(../images/about-us-parallax1-img.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    height: 553px;
+}
+
+h2.ou.r.process {
+    font-family: 'Quentin', cursive;
+    color: white;
+    font-size: 158px;
+    text-align: center;
+    padding-top: 131px;
+}
+
+/* <!-- our process section 1st ENDS here  --> */
+
+/* ================================================================ */
+/* ==================PROCESS PAGES ENDS ==== HERE================= */
+
+
+/* ================================================================ */
+/* ======================OUR TEAM PAGE STARTS HERE================= */
+
+/* amazing team section 1st begins here */
+.align-team-centre.amazing {
+    text-align: center;
+    padding: 80px 20px;
+    color: #444;
+}
+
+.align-team-centre.amazing img {
+    width: 10%;
+    margin-bottom: 15px;
+    opacity: 0.7;
+}
+
+.align-team-centre.amazing h2 {
+    font-size: 36px;
+    font-weight: 600;
+    color: #2f2f2f;
+    margin: 10px 0;
+    text-transform: capitalize;
+}
+
+.align-team-centre.amazing p {
+    max-width: 600px;
+    margin: 0 auto;
+    font-size: 15px;
+    color: #7a7a7a;
+    line-height: 1.6;
+}
+
+.align-team-centre.amazing::after {
+    content: "";
+    display: block;
+    width: 40px;
+    height: 2px;
+    background-color: #9ea69c;
+    margin: 20px auto 0;
+}
+
+/* members */
+.amazing_team-members {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 40px;
+    flex-wrap: wrap;
+    margin: 50px auto;
+}
+
+.member.amazing {
+    position: relative;
+    width: 250px;
+    height: 300px;
+    overflow: hidden;
+    border-radius: 12px;
+    cursor: pointer;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    transition: transform 0.4s ease;
+}
+
+.member.amazing:hover {
+    transform: translateY(-5px);
+}
+
+.member.amazing img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+    transition: transform 0.5s ease;
+}
+
+/* .member.amazing:hover img {
+    transform: scale(1.05);
+    filter: brightness(0.7);
+} */
+
+.about-member {
+    position: absolute;
+    bottom: -100%;
+    left: 0;
+    width: 100%;
+    background: rgb(153 147 147 / 70%);
+    color: #fff;
+    text-align: center;
+    padding: 15px 10px;
+    transition: bottom 0.4s ease;
+}
+
+.member.amazing:hover .about-member {
+    bottom: 0;
+}
+
+.about-member h3 {
+    margin: 0;
+    font-size: 18px;
+    font-weight: 600;
+    letter-spacing: 0.5px;
+}
+
+.about-member .health {
+    font-size: 14px;
+    margin-top: 4px;
+    color: #d3d3d3;
+}
+
+/* ===================OUR TEAM PAGE ENDS HERE======================= */
+
+
+
+
+/* ==================================================================== */
+/* ==================OUR PRICING PLAN PAGES STARTS HERE================== */
+.pricing-plan {
+    background-image: url(../images/pexels-ivan-samkov-5659012.jpg);
+    width: 100%;
+    height: 650px;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+}
+
+h2.picing-plan.heading {
+    font-family: "Cedarville Cursive", cursive;
+    font-size: 126px;
+    color: #ffffff;
+    text-align: center;
+    padding: 226px;
+}
+
+/* GRAPE FRUIT SECTION 2ND STARTS HERE */
+.different-prices_rank {
+    display: flex;
+    gap: 60px;
+    justify-content: space-between;
+}
+
+span.premium {
+    font-family: "Cedarville Cursive", cursive;
+    font-size: 34px;
+    text-transform: capitalize;
+    color: #93a286;
+    margin-left: 96px;
+}
+
+.premium.rank {
+    border: 1px solid #d1dfc4;
+    padding: 32px;
+}
+
+h2.dollar {
+    text-align: center;
+}
+
+p.increase {
+    text-align: center;
+    padding: 0 0 0 30px;
+    color: #80827e;
+}
+
+ul.lorem.list.items {
+    text-align: center;
+    color: #80827e;
+    line-height: 31px;
+}
+
+button.pricing_plan.buttonn {
+    display: block;
+    position: relative;
+    width: 57%;
+    height: 45px;
+    color: #68745c;
+    background-color: transparent;
+    border: 1px solid #9ca896;
+    left: 68px;
+}
+
+.premium.rank.bgclr {
+    background: #f5f7f4;
+    border-color: transparent;
+}
+
+/* GRAPE FRUIT SECTION 2ND ENDS HERE */
+
+
+/* ==================================================================== */
+/* ==================OUR PRICING PLAN PAGES ENDS HERE================== */
+
+
+
+
+
+/* ========================================================================= */
+/* =====================CONTACT US PAGE BEGINS HERE ======================== */
+
+/* CONTACT US FORM SECTION 2ND BEGINS HERE  */
+section.contact-us.form {
+    padding: 60px 0px;
+}
+
+.flex-contact.us_page {
+    display: flex;
+}
+
+input.name_input.field {
+    display: block;
+    line-height: 31px;
+    background: none;
+    outline: none;
+    width: 100%;
+    color: #80827e;
+    font-weight: 200;
+    line-height: 41px;
+    border-bottom: 1px solid #a5b199;
+    font-weight: 800;
+    text-transform: capitalize;
+}
+
+.flex-contact.us_page {
+    display: flex;
+    background: #F8F9F7;
+    padding: 67px;
+}
+
+p.contact.us.information {
+    width: 73%;
+    color: #5b6652;
+}
+
+h2.contact-us.heading {
+    font-size: 34px;
+    text-transform: capitalize;
+}
+
+textarea {
+    position: relative;
+    display: inline-block;
+    width: 100%;
+    vertical-align: top;
+    top: 30px;
+    margin: 0 0 0;
+    padding: 13.5px 155px;
+    font-family: inherit;
+    font-size: 14px;
+    line-height: 23px;
+    font-weight: inherit;
+    color: #80827e;
+    background-color: transparent;
+    /* border: 1px solid #a5b199; */
+    border-radius: 0;
+    outline: 0;
+    cursor: pointer;
+    -webkit-appearance: none;
+    -webkit-transition: color .2s ease-out, background-color .2s ease-out, border-color .2s ease-out;
+    transition: color .2s ease-out, background-color .2s ease-out, border-color .2s ease-out;
+}
+
+input.name_input.field::placeholder {
+    color: #80827e;
+    font-family: "Saira", sans-serif;
+    font-weight: 800;
+}
+
+ul.contact.us.list.items {
+    line-height: 34px;
+    padding-top: 31px;
+}
+
+/* contact information button */
+button.pricing_plan.buttonn.send.information {
+    margin: 52px 0 0 -66px;
+    padding: 0 0 0 0;
+}
+
+.pricing_plan.buttonn.send.information {
+    position: relative;
+    overflow: hidden;
+    background: transparent;
+    border: 1px solid #a5b199;
+    /* optional border */
+    color: #737373;
+    padding: 12px 35px;
+    font-size: 16px;
+    font-weight: 500;
+    text-transform: uppercase;
+    cursor: pointer;
+    transition: color 0.3s ease;
+}
+
+.pricing_plan.buttonn.send.information a {
+    text-decoration: none;
+    color: inherit;
+    position: relative;
+    z-index: 2;
+}
+
+/* Create the left-to-right background effect */
+.pricing_plan.buttonn.send.information::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 0%;
+    height: 100%;
+    background: #bec5b9;
+    transition: width 0.4s ease;
+    z-index: 1;
+}
+
+/* On hover, fill from left */
+.pricing_plan.buttonn.send.information:hover::before {
+    width: 100%;
+}
+
+/* Change text color on hover */
+.pricing_plan.buttonn.send.information:hover a {
+    color: #fff;
+}
+
+/* CONTACT US FORM SECTION 2ND ENDS HERE  */
+
+/* ========================================================================= */
+/* =====================CONTACT US PAGE ENDS HERE ======================== */
+
+
+
+
+/* ============================================================================ */
+/* ======================BLOG SINGLE PAGES BEGINS HERE========================= */
+/* ===========================
+   HERO SECTION WRAPPER
+   =========================== */
+.organic-hero {
+    width: 100%;
+    height: 100vh;
+    background: #f3f5f1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    position: relative;
+    overflow: hidden;
+    padding: 245px 0;
+}
+
+/* ===========================
+   LEAF IMAGES WRAPPER
+   =========================== */
+.flex-lan-leaf {
+    position: absolute;
+    inset: 0;
+    width: 100%;
+    height: 100%;
+    pointer-events: none;
+    /* so they don't block clicks */
+}
+
+/* LEFT LEAF */
+img.lan-leafx {
+    width: 32%;
+    transform: rotate(45deg);
+    position: absolute;
+    left: -160px;
+    /* adjust as you like */
+    top: -40px;
+    opacity: 0.9;
+}
+
+/* RIGHT LEAF */
+img.lan-leafx-leaf {
+    width: 35%;
+    transform: rotate(230deg);
+    position: absolute;
+    right: -196px;
+    bottom: -54px;
+    opacity: 0.9;
+}
+
+/* ===========================
+   TEXT CONTENT
+   =========================== */
+
+.organic-subtitle {
+    font-size: 70px;
+    font-family: "Brush Script MT", cursive;
+    color: #6d7b62;
+    margin-bottom: 10px;
+    letter-spacing: 2px;
+    font-weight: 100;
+}
+
+/* Main heading */
+.organic-title {
+    font-size: 60px;
+    font-weight: 700;
+    color: #2d2d2d;
+    margin-bottom: 15px;
+}
+
+/* Paragraph */
+.organic-text {
+    font-size: 18px;
+    color: #666;
+    max-width: 550px;
+    margin: 0 auto 30px;
+    line-height: 1.6;
+}
+
+/* button */
+button.pricing_plan.buttonn.send.information.purchase {
+    width: 15%;
+    margin: 0 0 0 433px;
+}
+
+/* <!-- welcome to sante section 1st ends here -->
+
+
+/* screen shot section 2nd begins here  */
+
+section.screenshots {
+    background: #f3f5f1;
+}
+
+/* sante logo image  */
+.ss-logo-img {
+    text-align: center;
+    position: relative;
+    bottom: 64px;
+}
+
+img.screenshot.img_logo {
+    width: 10%;
+}
+
+.ss-logo-img img.img_logo {
+    /* width: 80px; */
+    animation: rotateImgg 4s linear infinite;
+}
+
+@keyframes rotateImgg {
+    0% {
+        transform: rotate(0deg);
+    }
+
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+
+/* end upr wala */
+.full-ss.imgs {
+    background: white;
+    padding: 60px 0 0 60px;
+}
+
+.screenshot_pages {
+    display: flex;
+    gap: 50px;
+}
+
+.ss-card {
+    text-align: center;
+}
+
+img.screenshot-full {
+    width: 90%;
+    display: block;
+    border: 1px solid #fcfafa;
+}
+
+.caption-ss {
+    display: block;
+    margin-top: 10px;
+}
+
+.caption-ss a {
+    font-weight: 600;
+    text-transform: capitalize;
+}
+
+.caption-ss p {
+    margin: 0;
+    color: #555;
+}
+
+.screenshot_pages.second {
+    margin-top: 53px;
+}
+
+.screenshot_pages.\33 rd {
+    margin-top: 53px;
+}
+
+
+/* hover effect on screenshot effect */
+.ss-card {
+    text-align: center;
+    overflow: hidden;
+    cursor: pointer;
+}
+
+.ss-card img.screenshot-full {
+    width: 90%;
+    display: block;
+    transition: transform 0.4s ease;
+    border-radius: 10px;
+}
+
+/* Hover Image Zoom */
+.ss-card:hover img.screenshot-full {
+    transform: scale(1.05);
+}
+
+/* Caption Hover Effect */
+.caption-ss {
+    display: block;
+    margin-top: 10px;
+    transition: color 0.3s ease, transform 0.3s ease;
+}
+
+.ss-card:hover .caption-ss {
+    color: #98a398;
+    transform: translateY(-2px);
+}
+
+.caption-ss a {
+    font-weight: 600;
+    text-transform: capitalize;
+    text-decoration: none;
+    color: inherit;
+}
+
+.caption-ss p {
+    margin: 0;
+    color: #555;
+    transition: color 0.3s ease;
+}
+
+.ss-card:hover p {
+    color: #899289;
+}
+
+
+
+/* screenshot 2nd section ends here */
+
+
+/* delight shop element section 3rd begins here */
+section.delightful_shop.element {
+    padding: 110px 0px;
+    background: #f3f5f1;
+}
+
+.align-text-centre_delightful.element {
+    text-align: center;
+}
+
+.align-text-centre_delightful.element h2 {
+    color: #2f3327;
+    font-size: 38px;
+    text-transform: capitalize;
+    line-height: 52px;
+}
+
+.align-text-centre_delightful.element p {
+    width: 39%;
+    margin: 0 0 0 350px;
+}
+
+.align-text-centre_delightful.element p {
+    width: 39%;
+    margin: 0 0 0 350px;
+    color: #80827e;
+}
+
+span.border-bottom-delightful {
+    border-bottom: 2px solid #737373;
+    width: 6%;
+    position: absolute;
+    margin: 22px 0 0 -31px;
+}
+
+img.order-track {
+    width: 100%;
+}
+
+.order-tracking-one {
+    display: flex;
+    gap: 50px;
+    justify-content: center;
+    /* padding: 60px 0px; */
+}
+
+p.order-track_content {
+    text-align: center;
+    font-weight: 500;
+    text-transform: capitalize;
+    margin: 16px 0 0 0;
+}
+
+.flex-order.track_screenshots {
+    padding-top: 64px;
+    overflow: hidden;
+}
+
+.order-tracking-one.second {
+    padding-top: 56px;
+
+}
+
+/* delight shop element section 3rd ends here */
+
+
+
+/* fresh and smooth section 4th begins  here */
+section.fresh-smooth_lemon {
+    background-image: url(../images/land-img-2.jpg);
+    width: 100%;
+    height: 560px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+
+}
+
+h2.heading-fresh-smooth {
+    font-family: 'Great Vibes', cursive;
+    font-size: 140px;
+    color: white;
+    text-transform: capitalize;
+}
+
+.align-centre_fresh-smooth {
+    text-align: center;
+    padding: 160px 0px;
+}
+
+p.paragraph_fresh-smooth {
+    color: white;
+    font-size: 23px;
+    font-weight: 500;
+}
+
+
+/* fresh and smooth section 4th ends here */
+
+
+/* flexible header style section 5th begins here */
+.align-centre_header-flexible {
+    text-align: center;
+}
+
+section.flexible_header {
+    padding: 60px 0px;
+    background: #f3f5f1;
+
+}
+
+img.screenshot-pg {
+    width: 33%;
+    border: 1px solid #e3e3e3;
+}
+
+.screenshot-pg {
+    width: 100%;
+    filter: blur(1px) brightness(0.4);
+    transition: all 0.4s ease;
+    border-radius: 2px
+}
+
+
+.screenshot-pg:hover {
+    filter: blur(0) brightness(1);
+    border: 1px solid rgb(201, 194, 194);
+}
+
+.one_row.header-style.ss {
+    display: flex;
+    gap: 50px;
+    justify-content: center;
+}
+
+.one_row.header-style.sss {
+    padding: 60px 0px;
+    display: flex;
+    gap: 50px;
+    justify-content: center;
+}
+
+/* flexible header style section 5th ends here */
+
+
+/* organic shop theme section 6th begins here */
+section.organic-shop_theme {
+    background-image: url(../images/h1-parallax-img-1.jpg);
+    width: 100%;
+    height: 560px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+
+.thrive_with.orgainc-shop.theme {
+    text-align: center;
+    padding: 99px 0px;
+    color: white;
+}
+
+.thrive_with.orgainc-shop.theme h2 {
+    font-family: 'Great Vibes', cursive;
+    font-size: 140px;
+    color: white;
+    text-transform: capitalize;
+}
+
+.thrive_with.orgainc-shop.theme h4 {
+    font-size: 49px;
+}
+
+button.pricing_plan.buttonn.send.information.purchase {
+    border: 1px solid #877b7b;
+}
+
+button.pricing_plan.buttonn.send.information.purchase a {
+    color: #877b7b;
+}
+
+img.order-track {
+    width: 100%;
+    border: 1px solid #efeded;
+}
+
+/* organic shop theme section 6th ends here */
+
+
+
+
+/* ============================================================================ */
+/* ======================BLOG SINGLE PAGES ENDS HERE========================= */

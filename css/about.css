@@ -1,0 +1,107 @@
+/* testimonials section 2nd begins here */
+.all.content-flex.here {
+    opacity: 0;
+    transform: translateY(150px);
+    transition: all 0.8s ease-out;
+}
+
+.all.content-flex.here.show {
+    opacity: 1;
+    transform: translate(0);
+}
+
+/* testimonials section 2nd ends here */
+
+
+/* newsletter for 3rd section begins here */
+.align-centre.headings.in.newsletter.and.signupp {
+    opacity: 0;
+    transform: translateY(150px);
+    transition: all 0.8s ease-out;
+}
+
+.align-centre.headings.in.newsletter.and.signupp.show {
+    opacity: 1;
+    transform: translate(0);
+}
+
+/* newsletter for 3rd section ends here */
+
+
+/* gift and bag section 4th begins here */
+.gift.ones.love {
+    opacity: 0;
+    transform: translateY(100px);
+    transition: all 0.8s ease-out;
+}
+
+.gift.ones.love.show {
+    opacity: 1;
+    transform: translate(0);
+}
+
+/* heading */
+h2.quientin.font.family.used {
+    opacity: 0;
+    transform: translateY(100px);
+    transition: all 0.8s ease-out;
+}
+
+h2.quientin.font.family.used.show {
+    opacity: 1;
+    transform: translate(0);
+}
+
+/* gift and bag section 4th ends here */
+
+
+/* premium skincare section 5th starts here */
+.align-centre {
+    opacity: 0;
+    transform: translateY(100px);
+    transition: all 0.8s ease-out;
+}
+
+.align-centre.show {
+    opacity: 1;
+    transform: translate(0);
+}
+
+/* blog card one */
+.blog-card.card-one {
+    opacity: 0;
+    transform: translateX(60px);
+    transition: all 0.8s ease-out;
+}
+
+.blog-card.card-one.show {
+    opacity: 1;
+    transform: translate(0);
+}
+
+/* blog card 2nd */
+.blog-card.card-two {
+    opacity: 0;
+    transform: translateY(100px);
+    transition: all 0.8s ease-out;
+}
+
+.blog-card.card-two.show {
+    opacity: 1;
+    transform: translate(0);
+}
+
+/* blog card 3rd */
+.blog-card.card-third {
+    opacity: 0;
+    transform: translateX(-60px);
+    transition: all 0.8s ease-out;
+}
+
+.blog-card.card-third.show {
+    opacity: 1;
+    transform: translate(0);
+}
+
+
+/* premium skincare section 5th ends here */

@@ -1,0 +1,1249 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Girls SkinCare </title>
+
+  <!-- Bootstrap 5 CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet">
+
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+  <!-- Flaticon -->
+  <link rel="stylesheet" href="https://cdn-uicons.flaticon.com/uicons-regular/css/uicons-regular.css">
+
+  <!-- Google Fonts -->
+  <link
+    href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&family=Saira:wght@400;500;600;700&display=swap"
+    rel="stylesheet">
+
+  <!-- Font Awesome CDN -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" />
+
+  <!-- main css link -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.2/animate.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick-theme.min.css">
+
+  <!-- animate css -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
+
+  <!-- Custom  pagses and file CSS -->
+  <link rel="stylesheet" href="css/makeup.css">
+  <link rel="stylesheet" href="login-form-header.html">
+  <link rel="stylesheet" href="css/scrolling-site-home.css">
+
+
+</head>
+
+<body>
+  <!-- site starts from here -->
+
+  <!-- top header small section at top  -->
+  <div class="top-header">
+    <div class="social-icons">
+      <a href="#"><i class="fab fa-facebook-f"></i></a>
+      <a href="#"><i class="fab fa-twitter"></i></a>
+      <a href="#"><i class="fab fa-instagram"></i></a>
+    </div>
+
+    <div class="delivery-text">
+      <p>Free deliveries worldwide! For more info click <a href="#">Here</a></p>
+    </div>
+
+    <div class="user-options">
+      <a href="#" class="wishlist"><i class="far fa-heart"></i> Wishlist (0)</a>
+      <a href="https://sante.qodeinteractive.com/" class="login"><i class="fas fa-lock"></i> Login</a>
+    </div>
+  </div>
+  <!-- top header small section at top ends here -->
+
+  <!-- header in skin care site begins here    header logo-->
+  <div class="site-logo-skincare">
+    <img src="images/make-up-logo.png" alt="skin care logo " class="skincare-logo">
+  </div>
+
+
+  <!-- site logo in centre and out from header  MAIN HEADER-->
+  <header class="main-header">
+    <div class="container">
+      <nav class="navbar">
+        <ul class="nav-menu">
+          <li class="dropdown">
+            <a href="login-form-header.html" class="active">Home</a>
+            <ul class="dropdown-menu">
+              <li><a href="#">Home v1</a></li>
+              <li><a href="#">Home v2</a></li>
+              <li><a href="#">Home v3</a></li>
+            </ul>
+          </li>
+
+          <li class="dropdown">
+            <a href="process.html">Pages</a>
+            <ul class="dropdown-menu">
+              <li><a href="#">About</a></li>
+              <li><a href="#">Team</a></li>
+              <li><a href="#">Contact</a></li>
+            </ul>
+          </li>
+
+          <li class="dropdown">
+            <a href="about.html">Shop</a>
+            <ul class="dropdown-menu">
+              <li><a href="#">Products</a></li>
+              <li><a href="#">Cart</a></li>
+              <li><a href="#">Checkout</a></li>
+            </ul>
+          </li>
+
+          <li class="dropdown">
+            <a href="#">Store</a>
+            <ul class="dropdown-menu">
+              <li><a href="#">Categories</a></li>
+              <li><a href="#">Offers</a></li>
+              <li><a href="#">New Arrivals</a></li>
+            </ul>
+          </li>
+
+          <li class="dropdown">
+            <a href="#">Blog</a>
+            <ul class="dropdown-menu">
+              <li><a href="#">Latest Posts</a></li>
+              <li><a href="#">Single Post</a></li>
+              <li><a href="#">Categories</a></li>
+            </ul>
+          </li>
+
+          <li><a href="#">Landing</a></li>
+        </ul>
+
+        <div class="cart-icon">
+          <i class="fa-solid fa-bag-shopping"></i>
+          <span class="cart-count">1</span>
+        </div>
+      </nav>
+    </div>
+  </header>
+  <!-- header complete here MAIN HEADER ENDS HERE-->
+
+
+
+
+  <!-- product items slider items in section 2nd begins here -->
+  <!-- 2nd section of featured items starts here -->
+
+  <style>
+    .banner__slider {
+      position: relative;
+    }
+
+    .slider {
+      width: 100%;
+      height: 100vh;
+      overflow: hidden;
+    }
+
+    .slide {
+      position: relative;
+      height: 100vh;
+      width: 100%;
+    }
+
+    .slide__img img {
+      width: 100%;
+      height: 100vh;
+      object-fit: cover;
+    }
+
+    .slide__content {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      text-align: center;
+      color: #fff;
+    }
+
+    .slide__content p {
+      font-size: 1.4rem;
+      letter-spacing: 1px;
+      font-family: "Cedarville Cursive", cursive;
+      font-size: 31px;
+      font-weight: 400;
+    }
+
+    .slide__content h2 {
+      font-size: 3.5rem;
+      font-weight: 700;
+      margin: 10px 0;
+    }
+
+    .button-custom {
+      padding: 12px 35px;
+      border: none;
+      border-radius: 30px;
+      background-color: #fff;
+      color: #111;
+      font-weight: 600;
+      font-size: 1.1rem;
+      transition: 0.4s ease;
+    }
+
+    .button-custom:hover {
+      background-color: #ff7d7d;
+      color: #fff;
+    }
+
+    /* Dots */
+    .slick-dots {
+      bottom: 30px;
+    }
+
+    .slick-dots li button:before {
+      font-size: 12px;
+      color: #fff;
+      opacity: 0.5;
+      transition: 0.3s;
+    }
+
+    .slick-dots li.slick-active button:before {
+      opacity: 1;
+      color: #ff7d7d;
+    }
+
+    /* Arrows */
+    .slick-prev,
+    .slick-next {
+      z-index: 99;
+      width: 50px;
+      height: 50px;
+      border-radius: 50%;
+      background-color: rgba(255, 255, 255, 0.2);
+      transition: 0.3s ease;
+    }
+
+    .slick-prev:hover,
+    .slick-next:hover {
+      background-color: #ff7d7d;
+    }
+
+    .slick-prev:before,
+    .slick-next:before {
+      font-size: 25px;
+      color: white;
+    }
+
+    .slick-prev {
+      left: 25px;
+    }
+
+    .slick-next {
+      right: 25px;
+    }
+
+    @media (max-width: 768px) {
+      .slide__content h2 {
+        font-size: 2rem;
+      }
+
+      .button-custom {
+        padding: 10px 25px;
+        font-size: 1rem;
+      }
+    }
+  </style>
+
+  <section class="banner__slider">
+    <div class="slider">
+
+      <!-- Slide 1 -->
+      <div class="slide">
+        <div class="slide__img">
+          <img src="images/h1-rev-background-1.jpg" alt="Slide 1">
+        </div>
+        <div class="slide__content">
+          <p class="animate__animated animate__fadeInUp">Welcome to Shareat Restaurant</p>
+          <h2 class="animate__animated animate__fadeInUp">Let’s Enjoy The Rhythm Of Food</h2>
+          <button class="button-custom animate__animated animate__fadeInUp">Our Menu</button>
+        </div>
+      </div>
+
+      <!-- Slide 2 -->
+      <div class="slide">
+        <div class="slide__img">
+          <img src="images/h1-video-img-1-1536x520.jpg" alt="Slide 2">
+        </div>
+        <div class="slide__content">
+          <p class="animate__animated animate__fadeInLeft">Wish you have good food</p>
+          <h2 class="animate__animated animate__fadeInLeft">Experience the Taste</h2>
+          <button class="button-custom animate__animated animate__fadeInUp">Order Now</button>
+        </div>
+      </div>
+
+      <!-- Slide 3 -->
+      <div class="slide">
+        <div class="slide__img">
+          <img src="images/h1-rev-background-3.jpg" alt="Slide 3">
+        </div>
+        <div class="slide__content">
+          <p class="animate__animated animate__fadeInRight">Purchase today for just $76</p>
+          <h2 class="animate__animated animate__fadeInRight">Super Deal Lunch</h2>
+          <button class="button-custom animate__animated animate__fadeInUp">Today’s Menu</button>
+        </div>
+      </div>
+
+    </div>
+  </section>
+  <!-- script of slider -->
+  <script>
+    $(document).ready(function () {
+      $('.slider').slick({
+        autoplay: true,
+        autoplaySpeed: 3000,
+        speed: 800,
+        arrows: true,
+        dots: true,
+        infinite: true,
+        fade: true,
+        cssEase: 'linear',
+        prevArrow: '<button class="slick-prev"><i class="fa-solid fa-chevron-left"></i></button>',
+        nextArrow: '<button class="slick-next"><i class="fa-solid fa-chevron-right"></i></button>',
+      }).slickAnimation();
+    });
+  </script>
+
+
+
+  <!-- style featured  items section 2nd -->
+  <style>
+    .about-title {
+      font-size: 7.5rem;
+      font-weight: 900;
+      text-transform: uppercase;
+      letter-spacing: -0.02em;
+      position: absolute;
+      top: -165px;
+      left: 55%;
+      transform: translateX(-50%);
+      pointer-events: none;
+      white-space: nowrap;
+      font-family: "Arial Black", "Arial Bold", Arial, sans-serif;
+      background: linear-gradient(to bottom, rgb(23 31 50 / 35%) 30%, rgb(241 241 241 / 0%) 76%);
+      -webkit-background-clip: text;
+      background-clip: text;
+      color: transparent;
+      text-align: center;
+    }
+
+    .carousel-container {
+      width: 100%;
+      max-width: 1200px;
+      height: 450px;
+      perspective: 1000px;
+      margin-top: 218px;
+      top: 500px;
+    }
+
+    .carousel-track {
+      width: 100%;
+      height: 100%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      position: relative;
+      transform-style: preserve-3d;
+      transition: transform 0.8s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+      padding-left: 130px;
+    }
+
+    .card {
+      position: absolute;
+      width: 280px;
+      height: 380px;
+      background: white;
+      border-radius: 20px;
+      overflow: hidden;
+      box-shadow: 0 20px 40px rgba(0, 0, 0, 0.15);
+      transition: all 0.8s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+      cursor: pointer;
+    }
+
+    .card img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      transition: all 0.8s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+    }
+
+    .card.center {
+      z-index: 10;
+      transform: scale(1.1) translateZ(0);
+    }
+
+    .card.center img {
+      filter: none;
+    }
+
+    .card.left-2 {
+      z-index: 1;
+      transform: translateX(-400px) scale(0.8) translateZ(-300px);
+      opacity: 0.7;
+    }
+
+    .card.left-2 img {
+      filter: grayscale(100%);
+    }
+
+    .card.left-1 {
+      z-index: 5;
+      transform: translateX(-200px) scale(0.9) translateZ(-100px);
+      opacity: 0.9;
+    }
+
+    .card.left-1 img {
+      filter: grayscale(100%);
+    }
+
+    .card.right-1 {
+      z-index: 5;
+      transform: translateX(200px) scale(0.9) translateZ(-100px);
+      opacity: 0.9;
+    }
+
+    .card.right-1 img {
+      filter: grayscale(100%);
+    }
+
+    .card.right-2 {
+      z-index: 1;
+      transform: translateX(400px) scale(0.8) translateZ(-300px);
+      opacity: 0.7;
+    }
+
+    .card.right-2 img {
+      filter: grayscale(100%);
+    }
+
+    .card.hidden {
+      opacity: 0;
+      pointer-events: none;
+    }
+
+    .member-info {
+      text-align: center;
+      margin-top: 40px;
+      transition: all 0.5s ease-out;
+    }
+
+    .member-name {
+      color: #342b2b;
+      font-size: 2.5rem;
+      font-weight: 100;
+      margin-bottom: 10px;
+      position: relative;
+      display: inline-block;
+      text-transform: capitalize;
+    }
+
+    .member-name::before {
+      left: -120px;
+    }
+
+    .member-name::after {
+      right: -120px;
+    }
+
+    .member-role {
+      color: #848696;
+      font-size: 1.5rem;
+      font-weight: 500;
+      opacity: 0.8;
+      text-transform: uppercase;
+      letter-spacing: 0.1em;
+      padding: 10px 0;
+      margin-top: -15px;
+      position: relative;
+    }
+
+    .dots {
+      display: flex;
+      justify-content: center;
+      gap: 10px;
+      margin-top: 60px;
+    }
+
+    .dot {
+      width: 12px;
+      height: 12px;
+      border-radius: 50%;
+      background: rgba(8, 42, 123, 0.2);
+      cursor: pointer;
+      transition: all 0.3s ease;
+    }
+
+    .dot.active {
+      background: rgb(8, 42, 123);
+      transform: scale(1.2);
+    }
+
+    .nav-arrow {
+      position: absolute;
+      top: 50%;
+      transform: translateY(-50%);
+      background: rgba(8, 42, 123, 0.6);
+      color: white;
+      width: 40px;
+      height: 40px;
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      cursor: pointer;
+      z-index: 20;
+      transition: all 0.3s ease;
+      font-size: 1.5rem;
+      border: none;
+      outline: none;
+      padding-bottom: 4px;
+    }
+
+    .nav-arrow:hover {
+      background: rgba(0, 0, 0, 0.8);
+      transform: translateY(-50%) scale(1.1);
+    }
+
+    .nav-arrow.left {
+      left: 20px;
+      padding-right: 3px;
+    }
+
+    .nav-arrow.right {
+      right: 20px;
+      padding-left: 3px;
+    }
+
+    @media (max-width: 768px) {
+      .about-title {
+        font-size: 4.5rem;
+      }
+
+      .card {
+        width: 200px;
+        height: 280px;
+      }
+
+      .card.left-2 {
+        transform: translateX(-250px) scale(0.8) translateZ(-300px);
+      }
+
+      .card.left-1 {
+        transform: translateX(-120px) scale(0.9) translateZ(-100px);
+      }
+
+      .card.right-1 {
+        transform: translateX(120px) scale(0.9) translateZ(-100px);
+      }
+
+      .card.right-2 {
+        transform: translateX(250px) scale(0.8) translateZ(-300px);
+      }
+
+      .member-name {
+        font-size: 2rem;
+      }
+
+      .member-role {
+        font-size: 1.2rem;
+      }
+
+      .member-name::before,
+      .member-name::after {
+        width: 50px;
+      }
+
+      .member-name::before {
+        left: -70px;
+      }
+
+      .member-name::after {
+        right: -70px;
+      }
+    }
+  </style>
+  <!-- style ends here for 2nd section featured items -->
+
+  <!-- js of sider in 2nd section featured items -->
+  <script>
+    document.addEventListener("DOMContentLoaded", function () {
+      const teamMembers = [
+        { name: "calming", role: "baby care" },
+        { name: "green & tea", role: "baby care" },
+        { name: "green pack", role: "cosemetics" },
+        { name: "honey green tea", role: "baby care" },
+        { name: "scrub", role: "baby manager" },
+        { name: "coco lotion", role: "baby care" }
+      ];
+
+      const cards = document.querySelectorAll(".card");
+      const dots = document.querySelectorAll(".dot");
+      const memberName = document.querySelector(".member-name");
+      const memberRole = document.querySelector(".member-role");
+      const leftArrow = document.querySelector(".nav-arrow.left");
+      const rightArrow = document.querySelector(".nav-arrow.right");
+
+      let currentIndex = 0;
+      let isAnimating = false;
+
+      function updateCarousel(newIndex) {
+        if (isAnimating) return;
+        isAnimating = true;
+
+        currentIndex = (newIndex + cards.length) % cards.length;
+
+        cards.forEach((card, i) => {
+          const offset = (i - currentIndex + cards.length) % cards.length;
+
+          card.classList.remove(
+            "center",
+            "left-1",
+            "left-2",
+            "right-1",
+            "right-2",
+            "hidden"
+          );
+
+          if (offset === 0) {
+            card.classList.add("center");
+          } else if (offset === 1) {
+            card.classList.add("right-1");
+          } else if (offset === 2) {
+            card.classList.add("right-2");
+          } else if (offset === cards.length - 1) {
+            card.classList.add("left-1");
+          } else if (offset === cards.length - 2) {
+            card.classList.add("left-2");
+          } else {
+            card.classList.add("hidden");
+          }
+        });
+
+        dots.forEach((dot, i) => {
+          dot.classList.toggle("active", i === currentIndex);
+        });
+
+        memberName.style.opacity = "0";
+        memberRole.style.opacity = "0";
+
+        setTimeout(() => {
+          memberName.textContent = teamMembers[currentIndex].name;
+          memberRole.textContent = teamMembers[currentIndex].role;
+          memberName.style.opacity = "1";
+          memberRole.style.opacity = "1";
+        }, 300);
+
+        setTimeout(() => {
+          isAnimating = false;
+        }, 800);
+      }
+
+      leftArrow.addEventListener("click", () => {
+        updateCarousel(currentIndex - 1);
+      });
+
+      rightArrow.addEventListener("click", () => {
+        updateCarousel(currentIndex + 1);
+      });
+
+      dots.forEach((dot, i) => {
+        dot.addEventListener("click", () => {
+          updateCarousel(i);
+        });
+      });
+
+      cards.forEach((card, i) => {
+        card.addEventListener("click", () => {
+          updateCarousel(i);
+        });
+      });
+
+      document.addEventListener("keydown", (e) => {
+        if (e.key === "ArrowLeft") {
+          updateCarousel(currentIndex - 1);
+        } else if (e.key === "ArrowRight") {
+          updateCarousel(currentIndex + 1);
+        }
+      });
+
+      let touchStartX = 0;
+      let touchEndX = 0;
+
+      document.addEventListener("touchstart", (e) => {
+        touchStartX = e.changedTouches[0].screenX;
+      });
+
+      document.addEventListener("touchend", (e) => {
+        touchEndX = e.changedTouches[0].screenX;
+        handleSwipe();
+      });
+
+      function handleSwipe() {
+        const swipeThreshold = 50;
+        const diff = touchStartX - touchEndX;
+
+        if (Math.abs(diff) > swipeThreshold) {
+          if (diff > 0) {
+            updateCarousel(currentIndex + 1);
+          } else {
+            updateCarousel(currentIndex - 1);
+          }
+        }
+      }
+
+      updateCarousel(0);
+    });
+  </script>
+
+
+  <div class="carousel-container">
+    <h1 class="about-title">FEATURED ITEMS</h1>
+    <button class="nav-arrow left">‹</button>
+    <div class="carousel-track">
+      <!-- first img -->
+      <div class="card" data-index="0">
+        <a href="#"><img src="images/product-7-img-1-calming.jpg" alt=""></a>
+        <!-- content show while hover the img -->
+        <div class="hover-content-items">
+          <button class="quick-view"><a href="https://sante.qodeinteractive.com/">quick view <i
+                class="fa-regular fa-heart"></i></a></button>
+          <span class="price">$70.00</span>
+        </div>
+      </div>
+      <!-- 2nd img -->
+      <div class="card" data-index="1">
+        <a href="#"><img src="images/product-6-img-1.jpg" alt=""></a>
+        <!-- content show while hover the img -->
+        <div class="hover-content-items">
+          <button class="quick-view"><a href="https://sante.qodeinteractive.com/">quick view <i
+                class="fa-regular fa-heart"></i></a></button>
+          <span class="price">$70.00</span>
+        </div>
+      </div>
+      <!-- 3rd img -->
+      <div class="card" data-index="2">
+        <a href="#"><img src="images/product-1-img-1.jpg" alt="Team Member 3"></a>
+        <!-- content show while hover the img -->
+        <div class="hover-content-items">
+          <button class="quick-view"><a href="https://sante.qodeinteractive.com/">quick view <i
+                class="fa-regular fa-heart"></i></a></button>
+          <span class="price">$70.00</span>
+        </div>
+      </div>
+      <!-- 4th img -->
+      <div class="card" data-index="3">
+        <a href="#"> <img src="images/product-10-img-1-1 (1).jpg" alt="Team Member 4"></a>
+        <!-- content show while hover the img -->
+        <div class="hover-content-items">
+          <button class="quick-view"><a href="https://sante.qodeinteractive.com/">quick view <i
+                class="fa-regular fa-heart"></i></a></button>
+          <span class="price">$70.00</span>
+        </div>
+      </div>
+      <!-- 5th img -->
+      <div class="card" data-index="4">
+        <a href="#"><img src="images/product-4-img-1-scrub.jpg" alt="Team Member 5"></a>
+        <!-- content show while hover the img -->
+        <div class="hover-content-items">
+          <button class="quick-view"><a href="https://sante.qodeinteractive.com/product/scrub/">quick view <i
+                class="fa-regular fa-heart"></i></a></button>
+          <span class="price">$70.00</span>
+        </div>
+      </div>
+      <!-- 6th img -->
+      <div class="card" data-index="5">
+        <a href="#"><img src="images/product-8-img-1.jpg" alt="Team Member 6"></a>
+        <!-- content show while hover the img -->
+        <div class="hover-content-items">
+          <button class="quick-view"><a href="https://sante.qodeinteractive.com/">quick view <i
+                class="fa-regular fa-heart"></i></a></button>
+          <span class="price">$70.00</span>
+        </div>
+      </div>
+      <!-- img cmplt 6 -->
+
+    </div>
+    <button class="nav-arrow right">›</button>
+  </div>
+
+  <div class="member-info">
+    <h2 class="member-name">David Kim</h2>
+    <p class="member-role">Founder</p>
+  </div>
+
+  <!-- <div class="dots">
+  <div class="dot active" data-index="0"></div>
+  <div class="dot" data-index="1"></div>
+  <div class="dot" data-index="2"></div>
+  <div class="dot" data-index="3"></div>
+  <div class="dot" data-index="4"></div>
+  <div class="dot" data-index="5"></div>
+
+</div> -->
+  <!-- slider in items and products of makeup 2nd section ends here -->
+  <!-- img slider section 2nd ends here -->
+
+
+
+
+  <!-- natural and self body care section 3rd begins here  -->
+  <section class="natural-care">
+    <div class="container">
+      <div class="row">
+        <!-- first img -->
+        <div class="col">
+          <div class="organic">
+            <a href="https://sante.qodeinteractive.com/product-category/natural/">
+              <img src="images/h1-banner-img-1.jpg" alt="">
+              <div class="content-organic">
+                <span>organic</span>
+                <h2>natural</h2>
+              </div>
+            </a>
+          </div>
+        </div>
+
+        <!-- 2nd img -->
+        <div class="col">
+          <div class="organic">
+            <a href="https://sante.qodeinteractive.com/product-category/body-care/">
+              <img src="images/h1-banner-img-2.jpg" alt="">
+              <div class="content-organic">
+                <span>organic</span>
+                <h2>natural</h2>
+              </div>
+            </a>
+          </div>
+        </div>
+
+        <!-- 3rd img -->
+        <div class="col">
+          <div class="organic">
+            <a href="https://sante.qodeinteractive.com/product-category/selfcare/">
+              <img src="images/h1-banner-img-3.jpg" alt="">
+              <div class="content-organic">
+                <span>organic</span>
+                <h2>natural</h2>
+              </div>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- natural and self body care section 3rd ends here  -->
+
+  <!-- iframe yt video section 4th begins here -->
+  <section class="cosmetic-bg-img-iframe">
+    <div class="container">
+      <div class="iframe">
+        <a href="https://youtu.be/alVjh1nTHzE?si=uUqNBASXHvHcShnf" class="play-btn">
+        </a>
+      </div>
+    </div>
+  </section>
+  <!-- iframe yt video section 4th ends here -->
+
+
+  <!-- online store section 5th BEGINS here 5th section  -->
+  <section class="online-storee">
+    <div class="align-item-cntre-online-store">
+      <img src="images/section-title-icon-1.png" alt="online store leaf" class="online-store-leaf ">
+      <div class="heading-leafs">
+        <h4 class="your-store">All for your online store</h4>
+        <h6 class="online-store-paragraph">Alienum phaedrum torquatos nec eu, detr periculis ex, nihil expetendis in
+          mei.
+          Mei an pericula.</h6>
+      </div>
+    </div>
+    <!-- product images -->
+    <div class="row justify-content-center">
+
+      <!-- Product 1 -->
+      <div class="col-md-2 col-6 product-card">
+        <img src="images/product-6-img-1.jpg" alt="Coco Kiwi">
+        <div class="stars">
+          <i class="fa fa-star"></i>
+          <i class="fa fa-star"></i>
+          <i class="fa fa-star"></i>
+          <i class="fa fa-star-half-alt"></i>
+          <i class="fa-regular fa-star"></i>
+        </div>
+        <div class="product-name">Coco Kiwi</div>
+        <div class="price-box">
+          <span class="default-text">$64.00</span>
+          <span class="hover-text"><a href="#">add to Cart</a></span>
+        </div>
+      </div>
+
+      <!-- Product 2 -->
+      <div class="col-md-2 col-6 product-card">
+        <img src="images/product-7-img-1-calming.jpg" alt="Skin Serum">
+        <div class="stars">
+          <i class="fa fa-star"></i>
+          <i class="fa fa-star"></i>
+          <i class="fa fa-star"></i>
+          <i class="fa fa-star"></i>
+          <i class="fa-regular fa-star"></i>
+        </div>
+        <div class="product-name">Skin Serum</div>
+        <div class="price-box">
+          <span class="default-text">$90.00</span>
+          <span class="hover-text"><a href="#">add to Cart</a></span>
+        </div>
+      </div>
+
+      <!-- Product 3 -->
+      <div class="col-md-2 col-6 product-card">
+        <img src="images/product-2-img-1-skies.jpg" alt="Cleanse">
+        <div class="stars">
+          <i class="fa fa-star"></i>
+          <i class="fa fa-star"></i>
+          <i class="fa fa-star"></i>
+          <i class="fa fa-star"></i>
+          <i class="fa fa-star"></i>
+        </div>
+        <div class="product-name">Cleanse</div>
+        <div class="price-box">
+          <span class="default-text">$75.00</span>
+          <span class="hover-text"><a href="#">add to Cart</a></span>
+        </div>
+      </div>
+
+      <!-- Product 4 -->
+      <div class="col-md-2 col-6 product-card">
+        <img src="images/product-4-img-1-scrub.jpg" alt="Coco Skies Milk">
+        <div class="stars">
+          <i class="fa fa-star"></i>
+          <i class="fa fa-star"></i>
+          <i class="fa fa-star"></i>
+          <i class="fa-regular fa-star"></i>
+          <i class="fa-regular fa-star"></i>
+        </div>
+        <div class="product-name">Coco Skies Milk</div>
+        <div class="price-box">
+          <span class="default-text">$55.00</span>
+          <span class="hover-text"><a href="#">add to Cart</a></span>
+        </div>
+      </div>
+
+      <!-- Product 5 -->
+      <div class="col-md-2 col-6 product-card">
+        <img src="images/product-10-img-1-1.jpg" alt="Clay Mask">
+        <div class="stars">
+          <i class="fa fa-star"></i>
+          <i class="fa fa-star"></i>
+          <i class="fa fa-star"></i>
+          <i class="fa fa-star"></i>
+          <i class="fa fa-star"></i>
+        </div>
+        <div class="product-name">Clay Mask</div>
+        <div class="price-box">
+          <span class="default-text">$85.00</span>
+          <span class="hover-text"><a href="#">add to Cart</a></span>
+        </div>
+      </div>
+
+    </div>
+    <!-- 2nd product images -->
+    <div class="row justify-content-center">
+
+      <!-- Product 1 -->
+      <div class="col-md-2 col-6 product-card">
+        <img src="images/product-6-img-1.jpg" alt="Coco Kiwi">
+        <div class="stars">
+          <i class="fa fa-star"></i>
+          <i class="fa fa-star"></i>
+          <i class="fa fa-star"></i>
+          <i class="fa fa-star-half-alt"></i>
+          <i class="fa-regular fa-star"></i>
+        </div>
+        <div class="product-name">Coco Kiwi</div>
+        <div class="price-box">
+          <span class="default-text">$64.00</span>
+          <span class="hover-text"><a href="#">add to Cart</a></span>
+        </div>
+      </div>
+
+      <!-- Product 2 -->
+      <div class="col-md-2 col-6 product-card">
+        <img src="images/product-7-img-1-calming.jpg" alt="Skin Serum">
+        <div class="stars">
+          <i class="fa fa-star"></i>
+          <i class="fa fa-star"></i>
+          <i class="fa fa-star"></i>
+          <i class="fa fa-star"></i>
+          <i class="fa-regular fa-star"></i>
+        </div>
+        <div class="product-name">Skin Serum</div>
+        <div class="price-box">
+          <span class="default-text">$90.00</span>
+          <span class="hover-text"><a href="#">add to Cart</a></span>
+        </div>
+      </div>
+
+      <!-- Product 3 -->
+      <div class="col-md-2 col-6 product-card">
+        <img src="images/product-2-img-1-skies.jpg" alt="Cleanse">
+        <div class="stars">
+          <i class="fa fa-star"></i>
+          <i class="fa fa-star"></i>
+          <i class="fa fa-star"></i>
+          <i class="fa fa-star"></i>
+          <i class="fa fa-star"></i>
+        </div>
+        <div class="product-name">Cleanse</div>
+        <div class="price-box">
+          <span class="default-text">$75.00</span>
+          <span class="hover-text"><a href="#">add to Cart</a></span>
+        </div>
+      </div>
+
+      <!-- Product 4 -->
+      <div class="col-md-2 col-6 product-card">
+        <img src="images/product-4-img-1-scrub.jpg" alt="Coco Skies Milk">
+        <div class="stars">
+          <i class="fa fa-star"></i>
+          <i class="fa fa-star"></i>
+          <i class="fa fa-star"></i>
+          <i class="fa-regular fa-star"></i>
+          <i class="fa-regular fa-star"></i>
+        </div>
+        <div class="product-name">Coco Skies Milk</div>
+        <div class="price-box">
+          <span class="default-text">$55.00</span>
+          <span class="hover-text"><a href="#">add to Cart</a></span>
+        </div>
+      </div>
+
+      <!-- Product 5 -->
+      <div class="col-md-2 col-6 product-card">
+        <img src="images/product-10-img-1-1.jpg" alt="Clay Mask">
+        <div class="stars">
+          <i class="fa fa-star"></i>
+          <i class="fa fa-star"></i>
+          <i class="fa fa-star"></i>
+          <i class="fa fa-star"></i>
+          <i class="fa fa-star"></i>
+        </div>
+        <div class="product-name">Clay Mask</div>
+        <div class="price-box">
+          <span class="default-text">$85.00</span>
+          <span class="hover-text"><a href="#">add to Cart</a></span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- online store section 5th begins ENDS 5th section  -->
+
+
+  <!-- gift & bags section 6th begins here -->
+  <section class="gift-bagand section">
+    <div class="container">
+      <div class="background-gift-bag & sets image text">
+        <h2 class="heading-gift-and-sets">gift bags & sets</h2>
+        <p class="paragraph-gifts">Gifts & sets for your loved ones</p>
+        <button class="read-btn "><a href="#">read more</a></button>
+      </div>
+    </div>
+  </section>
+
+  <!-- gift & bags section 6th ends here -->
+
+
+  <!-- premium skincare section 7th section begins here -->
+  <section class="premium-skincare">
+    <div class="container">
+      <!-- align item centre -->
+      <div class="align-centre">
+        <a href="#"><img src="images/section-title-icon-1.png" alt=""></a>
+        <h2 class="premium skincare heading">Premium skincare</h2>
+        <p class="premium skincare paragraph here itis begins ">Alienum phaedrum torquatos nec eu, detr periculis ex,
+          nihil expetendis in mei. Mei an pericula.</p>
+      </div>
+      <!-- images og premium skincare -->
+      <div class="flex-blog-card">
+        <!-- 1st blog card -->
+        <div class="blog-card">
+          <div class="image-box">
+            <img src="images/h1-blog-list-img-1.jpg" alt="Cleansing scrub">
+            <span class="date">Oct | 9 | 2020</span>
+          </div>
+          <div class="content">
+            <p class="category">Cosmetics - <a href="#">Beauty</a> <a href="#">Handmade</a></p>
+            <h3>Cleansing scrub</h3>
+            <p class="desc">Alienum phaedrum torquatos nec eu, detr periculis ex, nihil expetendis in mei. Mei an
+              pericula
+              euripidis. hinc partem ei est eos ei</p>
+            <a href="#" class="read-more">Read More</a>
+          </div>
+        </div>
+        <!-- 2nd blog card -->
+        <div class="blog-card">
+          <div class="image-box">
+            <img src="images/h1-blog-list-img-2.jpg" alt="Nourish organic">
+            <span class="date">Oct | 9 | 2020</span>
+          </div>
+          <div class="content">
+            <p class="category">Cosmetics - <a href="#">Beauty</a> <a href="#">Handmade</a></p>
+            <h3>Nourish organic</h3>
+            <p class="desc">Alienum phaedrum torquatos nec eu, detr periculis ex, nihil expetendis in mei. Mei an
+              pericula
+              euripidis. hinc partem ei est eos ei</p>
+            <a href="#" class="read-more">Read More</a>
+          </div>
+        </div>
+        <!-- 3rd blog card -->
+        <div class="blog-card">
+          <div class="image-box">
+            <img src="images/h1-blog-list-img-3.jpg" alt="True botanicals">
+            <span class="date">Oct | 9 | 2020</span>
+          </div>
+          <div class="content">
+            <p class="category">Cosmetics - <a href="#">Beauty</a> <a href="#">Handmade</a></p>
+            <h3>True botanicals</h3>
+            <p class="desc">Alienum phaedrum torquatos nec eu, detr periculis ex, nihil expetendis in mei. Mei an
+              pericula
+              euripidis. hinc partem ei est eos ei</p>
+            <a href="#" class="read-more">Read More</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- premium skincare section 7th section ends here -->
+
+
+  <!-- newsletter for news 8th section begins here -->
+  <section class="newsltr news  and signup">
+    <div class="container">
+      <div class="background news letter color">
+        <div class="align-centre headings in newsletter and signupp">
+          <h2 class="newsltr heading">newsletter</h2>
+          <p class="signup and news">Sign Up For News</p>
+          <span class="border-input span"> <input size="40"
+              class="wpcf7-form-control wpcf7-email wpcf7-validates-as-required wpcf7-text wpcf7-validates-as-email"
+              aria-required="true" aria-invalid="false" placeholder="Your e-mail..." value="" type="email"
+              name="your-email">
+            <hr class="underline">
+          </span>
+          <button class="subscribe-btn">
+            <a href="#">Subscribe</a>
+          </button>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+
+  <!-- newsletter for news 8th section ends here -->
+
+
+
+  <!-- ========================footer ===================== -->
+  <!-- =================================================== -->
+  <!-- FOOTER BEGINS HERE -->
+  <footer class="footer-section">
+    <div class="container">
+
+      <div class="footer-content">
+        <!-- About Us -->
+        <div class="footer-box">
+          <h3>About us</h3>
+          <p>Your nature-inspired supplier of all-organic and fresh produce for all your daily needs. We offer
+            skin treatments, nutrition advisory and more.</p>
+        </div>
+
+        <!-- Contact Us -->
+        <div class="footer-box">
+          <h3>Contact us</h3>
+          <ul>
+            <li><a href="#"><i class="fa-regular fa-building"></i> 27 Rue du Aire 60000 Tillé, France</a>
+            </li>
+            <li><a href="#"><i class="fa-solid fa-phone"></i> +589 55668 8569 44</a></li>
+            <li><a href="#"><i class="fa-solid fa-envelope"></i> sante@qodeinteractive.com</a></li>
+          </ul>
+        </div>
+
+        <!-- Profile -->
+        <div class="footer-box">
+          <h3>Profile</h3>
+          <ul>
+            <li><a href="#"><i class="fa-regular fa-user"></i> My account</a></li>
+            <li><a href="#"><i class="fa-solid fa-tag"></i> Checkout</a></li>
+            <li><a href="#"><i class="fa-regular fa-eye"></i> Wishlist</a></li>
+          </ul>
+        </div>
+
+        <!-- Payment -->
+        <div class="footer-box">
+          <h3>Payment</h3>
+          <p>Alienum phaedrum torquatos nec eu, detr periculis ex, nihil expet.</p>
+          <img src="images/futer-img-1.png" alt="payment methods" class="payment-icons">
+        </div>
+      </div>
+      <!-- last one copyright -->
+      <hr class="copyright-hr">
+      <div class="copyright">
+
+        <a href="#"><img src="images/make-up-logo.png" alt="site logo"></a>
+        <p>Copyright © 2021 Qode Interactive, All Rights Reserved</p>
+        <!-- follow us logos -->
+
+        <h2 class="follow us">follow us:-</h2>
+        <ul class="follow links">
+          <li> <a href="#"><i class="fa-brands fa-facebook-f"></i></a></li>
+          <li><a href="#"><i class="fa-brands fa-twitter"></i></a></li>
+          <li><a href="#"><i class="fa-brands fa-square-instagram"></i></a></li>
+        </ul>
+
+      </div>
+    </div>
+  </footer>
+
+
+
+
+  <!-- ========================footer ===================== -->
+  <!-- =================================================== -->
+  <!-- FOOTER ENDS HERE -->
+
+
+
+  <!-- top to bottom button -->
+  <div class="back-to-top">
+    <a href="#top" class="top-btn">
+      <span>Back to Top</span>
+    </a>
+  </div>
+
+  <!-- Ensure jQuery is loaded first section slider js  -->
+  <!-- main js link -->
+  <!-- Ensure jQuery is loaded first -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.js"></script>
+  <script src="https://alexandrebuffet.fr/codepen/slider/slick-animation.min.js"></script>
+  <!-- jQuery -->
+  <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+  <!-- Slick Animation JS (optional if you want fade-in effects) -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-animation/0.3.3/slick-animation.min.js"></script>
+  <!-- link js -->
+  <script src="js/scrolling-site-home.js"></script>
+</body>
+
+</html>

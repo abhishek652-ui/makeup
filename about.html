@@ -1,0 +1,707 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>girls skincare</title>
+
+    <!-- Slick Slider CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick-theme.min.css">
+
+    <!-- Google Font family -->
+    <link
+        href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&family=Saira:wght@400;500;600;700&display=swap"
+        rel="stylesheet">
+
+    <!-- Animate.css -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.2/animate.min.css">
+    <!-- Font Awesome CDN -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" />
+
+    <!-- jQuery -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
+    <!-- Slick JS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.js"></script>
+
+    <!-- Slick Animation Plugin -->
+    <script src="https://cdn.jsdelivr.net/gh/mreq/slick-animation/slick-animation.min.js"></script>
+    <!-- files link -->
+    <link rel="stylesheet" href="css/makeup.css">
+    <link rel="stylesheet" href="makeup.html">
+    <link rel="stylesheet" href="css/about.css">
+    <link rel="stylesheet" href="css/responsive.css">
+    <!-- quientin font family -->
+    <link href="https://fonts.cdnfonts.com/css/quentin" rel="stylesheet">
+
+
+
+    <style>
+        /* ===============================
+           SLIDER DESIGN
+        =============================== */
+        .slider {
+            position: relative;
+            overflow: hidden;
+        }
+
+        .slide {
+            position: relative;
+        }
+
+        .slide__img {
+            width: 100%;
+            height: auto;
+            overflow: hidden;
+        }
+
+        .slide__img img {
+            width: 100%;
+            height: auto;
+            object-fit: cover;
+            opacity: 1 !important;
+            animation-duration: 3s;
+            transition: all 1s ease;
+        }
+
+        .slide__content {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            text-align: center;
+        }
+
+        .slide__content.slide__content__left {
+            left: 15%;
+            transform: translate(-15%, -50%);
+            text-align: left;
+        }
+
+        .slide__content.slide__content__right {
+            right: 15%;
+            left: auto;
+            transform: translate(5%, -50%);
+            text-align: right;
+        }
+
+        .slide__content--headings {
+            color: #fff;
+        }
+
+        .slide__content--headings h2 {
+            font-size: 3.5rem;
+            margin: 10px 0;
+        }
+
+        .slide__content--headings .top-title {
+            font-family: 'Playball', cursive;
+            font-size: 2rem;
+        }
+
+        .button-custom {
+            border: 2px solid #fff;
+            background: transparent;
+            color: #fff !important;
+            padding: 1rem 2.2rem;
+            font-size: 1.1rem;
+            border-radius: 30px;
+            transition: all 0.3s ease;
+        }
+
+        .button-custom:hover {
+            background: #fff;
+            color: #000 !important;
+        }
+
+        /* Dots style */
+        /* .stick-dots .slick-dots {
+            position: absolute;
+            bottom: 25px;
+            width: 100%;
+            text-align: center;
+            list-style: none;
+            padding: 0;
+            margin: 0;
+        }
+
+        .stick-dots .slick-dots li {
+            display: inline-block;
+            width: 50px;
+            height: 3px;
+            margin: 0 5px;
+        }
+
+        .stick-dots .slick-dots li button {
+            width: 50px;
+            height: 3px;
+            background: white;
+            opacity: 0.25;
+            border: none;
+            padding: 0;
+            cursor: pointer;
+            transition: all .3s ease;
+        }
+
+        .stick-dots .slick-dots li.slick-active button {
+            opacity: 0.8;
+        } */
+
+        /* Arrows */
+        .slick-nav {
+            --active: #fff;
+            --border: rgba(255, 255, 255, .12);
+            width: 44px;
+            height: 44px;
+            position: absolute;
+            top: 50%;
+            transform: translateY(-50%);
+            cursor: pointer;
+            z-index: 10;
+        }
+
+        .slick-nav.prev-arrow {
+            left: 3%;
+            transform: scaleX(-1) translateY(-50%);
+        }
+
+        .slick-nav.next-arrow {
+            right: 3%;
+        }
+
+        .slick-nav i {
+            display: block;
+            position: absolute;
+            width: 20px;
+            height: 20px;
+            left: 50%;
+            top: 50%;
+            margin: -10px 0 0 -10px;
+        }
+
+        .slick-nav i:before,
+        .slick-nav i:after {
+            content: '';
+            width: 10px;
+            height: 2px;
+            background: var(--active);
+            position: absolute;
+            left: 50%;
+            top: 50%;
+            transform-origin: 9px 50%;
+            border-radius: 1px;
+        }
+
+        .slick-nav i:before {
+            transform: rotate(-40deg);
+        }
+
+        .slick-nav i:after {
+            transform: rotate(40deg);
+        }
+
+        .slick-nav svg {
+            width: 44px;
+            height: 44px;
+            display: block;
+            position: relative;
+            color: var(--active);
+            stroke-width: 2px;
+            stroke-dashoffset: 126;
+            stroke-dasharray: 126 126 0;
+        }
+
+        /* Responsive height */
+        @media (min-width: 992px) {
+
+            .slider,
+            .slide {
+                height: 80vh;
+            }
+
+            .slide__img img {
+                height: 100%;
+            }
+        }
+
+        /* Zoom Animations */
+        @keyframes zoomInImage {
+            from {
+                transform: scale3d(1, 1, 1);
+            }
+
+            to {
+                transform: scale3d(1.1, 1.1, 1.1);
+            }
+        }
+
+        .zoomInImage {
+            animation-name: zoomInImage;
+        }
+
+        @keyframes zoomOutImage {
+            from {
+                transform: scale3d(1.1, 1.1, 1.1);
+            }
+
+            to {
+                transform: scale3d(1, 1, 1);
+            }
+        }
+
+        .zoomOutImage {
+            animation-name: zoomOutImage;
+        }
+
+        /* font family */
+        p.animated.top-title {
+            font-family: "Cedarville Cursive", cursive;
+            font-size: 58px;
+            font-weight: 100;
+        }
+
+        h2.animated.title {
+            font-size: 27px;
+            text-transform: capitalize;
+            font-weight: 400;
+
+        }
+    </style>
+</head>
+
+<body>
+    <!-- header section here it is============== -->
+
+    <div class="top-header">
+        <div class="social-icons">
+            <a href="#"><i class="fab fa-facebook-f"></i></a>
+            <a href="#"><i class="fab fa-twitter"></i></a>
+            <a href="#"><i class="fab fa-instagram"></i></a>
+        </div>
+
+        <div class="delivery-text">
+            <p>Free deliveries worldwide! For more info click <a href="#">Here</a></p>
+        </div>
+
+        <div class="user-options">
+            <a href="#" class="wishlist"><i class="far fa-heart"></i> Wishlist (0)</a>
+            <a href="https://sante.qodeinteractive.com/" class="login"><i class="fas fa-lock"></i> Login</a>
+        </div>
+    </div>
+    <!-- top header small section at top ends here -->
+
+    <!-- header in skin care site begins here    header logo-->
+    <div class="site-logo-skincare">
+        <img src="images/make-up-logo.png" alt="skin care logo " class="skincare-logo">
+    </div>
+
+
+    <!-- site logo in centre and out from header  MAIN HEADER-->
+    <header class="main-header">
+        <div class="container">
+            <nav class="navbar">
+                <ul class="nav-menu">
+                    <li class="dropdown">
+                        <a href="#" class="active">Home</a>
+                        <ul class="dropdown-menu">
+                            <li><a href="#">Home v1</a></li>
+                            <li><a href="#">Home v2</a></li>
+                            <li><a href="#">Home v3</a></li>
+                        </ul>
+                    </li>
+
+                    <li class="dropdown">
+                        <a href="process.html">Pages</a>
+                        <ul class="dropdown-menu">
+                            <li><a href="#">About</a></li>
+                            <li><a href="#">Team</a></li>
+                            <li><a href="#">Contact</a></li>
+                        </ul>
+                    </li>
+
+                    <li class="dropdown">
+                        <a href="about.html">Shop</a>
+                        <ul class="dropdown-menu">
+                            <li><a href="#">Products</a></li>
+                            <li><a href="#">Cart</a></li>
+                            <li><a href="#">Checkout</a></li>
+                        </ul>
+                    </li>
+
+                    <li class="dropdown">
+                        <a href="#">Store</a>
+                        <ul class="dropdown-menu">
+                            <li><a href="#">Categories</a></li>
+                            <li><a href="#">Offers</a></li>
+                            <li><a href="#">New Arrivals</a></li>
+                        </ul>
+                    </li>
+
+                    <li class="dropdown">
+                        <a href="#">Blog</a>
+                        <ul class="dropdown-menu">
+                            <li><a href="#">Latest Posts</a></li>
+                            <li><a href="#">Single Post</a></li>
+                            <li><a href="#">Categories</a></li>
+                        </ul>
+                    </li>
+
+                    <li><a href="#">Landing</a></li>
+                </ul>
+
+                <div class="cart-icon">
+                    <i class="fa-solid fa-bag-shopping"></i>
+                    <span class="cart-count">1</span>
+                </div>
+            </nav>
+        </div>
+    </header>
+    <!-- header complete here MAIN HEADER ENDS HERE-->
+
+
+    <!-- ===============================
+         SLIDER SECTION
+    =============================== -->
+    <section class="banner__slider">
+        <div class="slider stick-dots">
+            <!-- Slide 1 -->
+            <div class="slide">
+                <div class="slide__img">
+                    <img src="images/h1-rev-background-3.jpg" alt="Slide 1" class="full-image animated"
+                        data-animation-in="zoomInImage" />
+                </div>
+                <div class="slide__content">
+                    <div class="slide__content--headings">
+                        <p class="animated top-title" data-animation-in="fadeInUp" data-delay-in="0.3">
+                            collection starter
+                        </p>
+                        <h2 class="animated title" data-animation-in="fadeInUp">
+                            A new genration of natural cosmetics and ingredients
+                        </h2>
+                        <button class="btn button-custom animated" data-animation-in="fadeInUp">Our Menu</button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Slide 2 -->
+            <div class="slide">
+                <div class="slide__img">
+                    <img src="images/h1-rev-background-1.jpg" alt="Slide 2" class="full-image animated"
+                        data-animation-in="zoomOutImage" />
+                </div>
+                <div class="slide__content slide__content__right">
+                    <div class="slide__content--headings">
+                        <p class="animated top-title" data-animation-in="fadeInLeft" data-delay-in="0.2">
+                            collection starter
+                        </p>
+                        <h2 class="animated title" data-animation-in="fadeInLeft">
+                            our organic tea blends
+                        </h2>
+                        <button class="btn button-custom animated" data-animation-in="fadeInUp">Order Now</button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Slide 3 -->
+            <div class="slide">
+                <div class="slide__img">
+                    <img src="images/h1-parallax-img-1.jpg" alt="Slide 3" class="full-image animated"
+                        data-animation-in="zoomInImage" />
+                </div>
+                <div class="slide__content slide__content__left">
+                    <div class="slide__content--headings">
+                        <p class="animated top-title" data-animation-in="fadeInRight" data-delay-in="0.2">
+                            Purchase today — just $76
+                        </p>
+                        <h2 class="animated title" data-animation-in="fadeInRight">
+                            SUPER DEAL LUNCH
+                        </h2>
+                        <button class="btn button-custom animated" data-animation-in="fadeInUp">Today's Menu</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- SVG for Arrow -->
+        <!-- <svg xmlns="http://www.w3.org/2000/svg" style="display: none;">
+            <symbol viewBox="0 0 44 44" width="44px" height="44px" id="circle" fill="none" stroke="currentColor">
+                <circle r="20" cy="22" cx="22"></circle>
+            </symbol>
+        </svg> -->
+    </section>
+
+    <!-- ===============================
+         SLICK INITIALIZATION 
+    =============================== -->
+    <script>
+        $(document).ready(function () {
+            $('.slider').slick({
+                autoplay: true,
+                autoplaySpeed: 4000,
+                speed: 800,
+                lazyLoad: 'progressive',
+                arrows: true,
+                dots: true,
+                prevArrow: '<div class="slick-nav prev-arrow"><i></i><svg><use xlink:href="#circle"></use></svg></div>',
+                nextArrow: '<div class="slick-nav next-arrow"><i></i><svg><use xlink:href="#circle"></use></svg></div>',
+            }).slickAnimation();
+        });
+    </script>
+    <!-- slider in first section ends here -->
+
+
+    <!-- testimonial section in about file section 2nd begins here -->
+
+    <section class="philosophy-section">
+        <div class="container">
+            <div class="all content-flex here">
+                <!-- LEFT CONTENT -->
+                <div class="philosophy-left">
+                    <h5>Testimonials</h5>
+                    <h2>Our philosophy</h2>
+                    <p>
+                        Qui soleat legere gloriatur an, ad zril labores pro, eum postea veritus eu.
+                        Ei iudico essent latine has. Modus omnium vituperata vis ei, ea tale erat app
+                        latur sit, pro ex tale doming molestiae. De mo critum sa dip scing mea ex.
+                        Lorem ipsum dolor sit amet, mea omnes.
+                    </p>
+                    <button class="read-btn-more"><a href="#">read more</a></button>
+                </div>
+
+                <!-- RIGHT ACCORDION -->
+                <div class="accordion">
+                    <div class="accordion-item active">
+                        <div class="accordion-header">What We Use?</div>
+                        <div class="accordion-content">
+                            <p>Debitis iracundia eu qui, ut nam case pertinacia. Ex sed prompta intellegat,
+                                et regione constituam sed. Ut cibo splendide duo.</p>
+                        </div>
+                    </div>
+
+                    <div class="accordion-item">
+                        <div class="accordion-header">How We Use It?</div>
+                        <div class="accordion-content">
+                            <p>Mundi quidam quodsi nec ex. Malis evertitur cum ea, vim at vidit errem percipitur, ne mea
+                                animal qualisque.
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="accordion-item">
+                        <div class="accordion-header">Why Organic?</div>
+                        <div class="accordion-content">
+                            <p>Debitis iracundia eu qui, ut nam case pertinacia. Ex sed prompta intellegat, et regione
+                                constituam sed. Ut cibo splendide duo.
+
+
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="accordion-item">
+                        <div class="accordion-header">Why go Veggie?</div>
+                        <div class="accordion-content">
+                            <p>At has quod diceret, est ad dicunt contentiones. Nonumy omnium tincidunt eos ei, an
+                                veniam fastidii honestatis eum.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- =============== !-->
+    <script>
+        const accordionItems = document.querySelectorAll('.accordion-item');
+        accordionItems.forEach(item => {
+            item.querySelector('.accordion-header').addEventListener('click', () => {
+                accordionItems.forEach(i => i.classList.remove('active'));
+                item.classList.toggle('active');
+            });
+        });
+    </script>
+
+
+    <!-- testimonial section in about file section 2nd ends here -->
+
+
+    <!-- newsletter for news 3rd section begins here -->
+    <section class="newsltr news  and signup">
+        <div class="container">
+            <div class="background news letter color">
+                <div class="align-centre headings in newsletter and signupp">
+                    <h2 class="newsltr heading cursive font">newsletter</h2>
+                    <p class="signup and news">Sign Up For News</p>
+                    <span class="border-input span"> <input size="40"
+                            class="wpcf7-form-control wpcf7-email wpcf7-validates-as-required wpcf7-text wpcf7-validates-as-email"
+                            aria-required="true" aria-invalid="false" placeholder="Your e-mail..." value="" type="email"
+                            name="your-email">
+                        <hr class="underline">
+                    </span>
+                    <button class="read-btn-more form"><a href="#">read more</a></button>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- newsletter for news 3rd section ends here -->
+
+
+    <!-- gift bag and section 4th section begins here -->
+    <section class="gift and bag dataaos bg img ">
+        <div class="gift ones love ">
+            <a href="#" class="bg img gifted bag"></a>
+            <h2 class="quientin font family used ">Gift bags & Sets</h2>
+            <h3 class="gift and sets sub heading">Gifts & Sets for your loved ones</h3>
+        </div>
+    </section>
+
+    <!-- gift bag and section 4th section ends here -->
+
+
+    <!-- premium skincare section 5th section begins here -->
+    <section class="premium-skincare">
+        <div class="container">
+            <!-- align item centre -->
+            <div class="align-centre">
+                <a href="#"><img src="images/section-title-icon-1.png" alt=""></a>
+                <h2 class="premium skincare heading">Premium skincare</h2>
+                <p class="premium skincare paragraph here itis begins ">Alienum phaedrum torquatos nec eu, detr
+                    periculis ex,
+                    nihil expetendis in mei. Mei an pericula.</p>
+            </div>
+            <!-- images og premium skincare -->
+            <div class="flex-blog-card">
+                <!-- 1st blog card -->
+                <div class="blog-card card-one">
+                    <div class="image-box">
+                        <img src="images/h1-blog-list-img-1.jpg" alt="Cleansing scrub">
+                        <span class="date">Oct | 9 | 2020</span>
+                    </div>
+                    <div class="content">
+                        <p class="category">Cosmetics - <a href="#">Beauty</a> <a href="#">Handmade</a></p>
+                        <h3>Cleansing scrub</h3>
+                        <p class="desc">Alienum phaedrum torquatos nec eu, detr periculis ex, nihil expetendis in mei.
+                            Mei an
+                            pericula
+                            euripidis. hinc partem ei est eos ei</p>
+                        <a href="#" class="read-more">Read More</a>
+                    </div>
+                </div>
+                <!-- 2nd blog card -->
+                <div class="blog-card card-two">
+                    <div class="image-box">
+                        <img src="images/h1-blog-list-img-2.jpg" alt="Nourish organic">
+                        <span class="date">Oct | 9 | 2020</span>
+                    </div>
+                    <div class="content">
+                        <p class="category">Cosmetics - <a href="#">Beauty</a> <a href="#">Handmade</a></p>
+                        <h3>Nourish organic</h3>
+                        <p class="desc">Alienum phaedrum torquatos nec eu, detr periculis ex, nihil expetendis in mei.
+                            Mei an
+                            pericula
+                            euripidis. hinc partem ei est eos ei</p>
+                        <a href="#" class="read-more">Read More</a>
+                    </div>
+                </div>
+                <!-- 3rd blog card -->
+                <div class="blog-card card-third">
+                    <div class="image-box">
+                        <img src="images/h1-blog-list-img-3.jpg" alt="True botanicals">
+                        <span class="date">Oct | 9 | 2020</span>
+                    </div>
+                    <div class="content">
+                        <p class="category">Cosmetics - <a href="#">Beauty</a> <a href="#">Handmade</a></p>
+                        <h3>True botanicals</h3>
+                        <p class="desc">Alienum phaedrum torquatos nec eu, detr periculis ex, nihil expetendis in mei.
+                            Mei an
+                            pericula
+                            euripidis. hinc partem ei est eos ei</p>
+                        <a href="#" class="read-more">Read More</a>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <hr class="footer-copyright">
+    <!-- premium skincare section 5th section ends here -->
+
+
+    <!-- ========================footer ===================== -->
+    <!-- =================================================== -->
+    <!-- FOOTER BEGINS HERE -->
+    <footer class="footer-section">
+        <div class="container">
+
+            <div class="footer-content">
+                <!-- About Us -->
+                <div class="footer-box">
+                    <h3>About us</h3>
+                    <p>Your nature-inspired supplier of all-organic and fresh produce for all your daily needs. We offer
+                        skin treatments, nutrition advisory and more.</p>
+                </div>
+
+                <!-- Contact Us -->
+                <div class="footer-box">
+                    <h3>Contact us</h3>
+                    <ul>
+                        <li><a href="#"><i class="fa-regular fa-building"></i> 27 Rue du Aire 60000 Tillé, France</a>
+                        </li>
+                        <li><a href="#"><i class="fa-solid fa-phone"></i> +589 55668 8569 44</a></li>
+                        <li><a href="#"><i class="fa-solid fa-envelope"></i> sante@qodeinteractive.com</a></li>
+                    </ul>
+                </div>
+
+                <!-- Profile -->
+                <div class="footer-box">
+                    <h3>Profile</h3>
+                    <ul>
+                        <li><a href="#"><i class="fa-regular fa-user"></i> My account</a></li>
+                        <li><a href="#"><i class="fa-solid fa-tag"></i> Checkout</a></li>
+                        <li><a href="#"><i class="fa-regular fa-eye"></i> Wishlist</a></li>
+                    </ul>
+                </div>
+
+                <!-- Payment -->
+                <div class="footer-box">
+                    <h3>Payment</h3>
+                    <p>Alienum phaedrum torquatos nec eu, detr periculis ex, nihil expet.</p>
+                    <img src="images/futer-img-1.png" alt="payment methods" class="payment-icons">
+                </div>
+            </div>
+            <!-- last one copyright -->
+            <hr class="copyright-hr">
+            <div class="copyright">
+
+                <a href="#"><img src="images/make-up-logo.png" alt="site logo"></a>
+                <p>Copyright © 2021 Qode Interactive, All Rights Reserved</p>
+                <!-- follow us logos -->
+
+                <h2 class="follow us">follow us:-</h2>
+                <ul class="follow links">
+                    <li> <a href="#"><i class="fa-brands fa-facebook-f"></i></a></li>
+                    <li><a href="#"><i class="fa-brands fa-twitter"></i></a></li>
+                    <li><a href="#"><i class="fa-brands fa-square-instagram"></i></a></li>
+                </ul>
+
+            </div>
+        </div>
+    </footer>
+
+
+
+
+    <!-- ========================footer ===================== -->
+    <!-- =================================================== -->
+    <!-- FOOTER ENDS HERE -->
+
+    <!-- script js  -->
+    <script src="js/about.js "></script>
+</body>
+
+</html>

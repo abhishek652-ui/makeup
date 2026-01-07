@@ -1,0 +1,194 @@
+/* // 1stttttt SECTION 
+// organic container main div in 1st section */
+.organic-container {
+    opacity: 0;
+    transform: translateY(50px);
+    transition: all 0.8s ease-out;
+}
+
+.organic-container.show {
+    opacity: 1;
+    transform: translate(0);
+}
+
+/* organic shop heading */
+.organic-subtitle {
+    opacity: 0;
+    transform: translateY(50px);
+    transition: all 0.8s ease-out;
+}
+
+.organic-subtitle.show {
+    opacity: 1;
+    transform: translate(0);
+}
+
+/* welcome heading */
+.organic-title {
+    opacity: 0;
+    transform: translateY(50px);
+    transition: all 0.8s ease-out;
+}
+
+.organic-title.show {
+    opacity: 1;
+    transform: translate(0);
+}
+
+/* purchase button */
+button.pricing_plan.buttonn.send.information.purchase {
+    opacity: 0;
+    transform: translateY(50px);
+    transition: all 0.8s ease-out;
+}
+
+button.pricing_plan.buttonn.send.information.purchase.show {
+    opacity: 1;
+    transform: translate(0);
+}
+
+/* 1sttttttt SECTION ENDS */
+
+
+/* SCREENSHOTS SECTION 2ND SECTION BEGINS HERE */
+/* 1ST ROW OF SCREENSHOTS */
+.screenshot_pages {
+    opacity: 0;
+    transform: translateY(100px);
+    transition: all 0.8s ease-out;
+}
+
+.screenshot_pages.show {
+    opacity: 1;
+    transform: translate(0);
+}
+
+/* 2nd ROW OF SCREENSHOTS */
+.screenshot_pages.second {
+    opacity: 0;
+    transform: translateY(100px);
+    transition: all 0.8s ease-out;
+}
+
+.screenshot_pages.second.show {
+    opacity: 1;
+    transform: translate(0);
+}
+
+/* SCREENSHOTS SECTION 2ND SECTION ENDS HERE */
+
+
+/* delightful section 3rd begins here */
+.align-text-centre_delightful.element {
+    opacity: 0;
+    transform: translateY(100px);
+    transition: all 0.8s ease-out;
+}
+
+.align-text-centre_delightful.element.show {
+    opacity: 1;
+    transform: translate(0);
+}
+
+/* order tracking same section as upper */
+.order-tracking-one {
+    opacity: 0;
+    transform: translateX(100px);
+    transition: all 0.8s ease-out;
+}
+
+.order-tracking-one.show {
+    opacity: 1;
+    transform: translate(0);
+}
+
+/* 2nd row order tracking */
+.order-tracking-one.second {
+    opacity: 0;
+    transform: translateX(-100px);
+    transition: all 0.8s ease-out;
+}
+
+.order-tracking-one.second.show {
+    opacity: 1;
+    transform: translateX(0);
+}
+
+/* SCREENSHOTS SECTION 3RD ENDS HERE */
+
+
+
+/* FRESH AND SMOOTH SECTION 4TH BEGINS HERE */
+.align-centre_fresh-smooth {
+    opacity: 0;
+    transform: translateY(100px);
+    transition: all 0.8s ease-out;
+}
+
+.align-centre_fresh-smooth.show {
+    opacity: 1;
+    transform: translateX(0);
+}
+
+/* FRESH AND SMOOTH SECTION 4TH BEGINS HERE */
+
+
+/* FLEXIBLE HEADER STYLE SECTION 5TH BEGINS HERE */
+/* heading 3 part */
+.align-centre_header-flexible {
+    opacity: 0;
+    transform: translateY(100px);
+    transition: all 0.8s ease-out;
+}
+
+.align-centre_header-flexible.show {
+    opacity: 1;
+    transform: translateX(0);
+}
+
+/*header style screenshot  */
+.one_row.header-style.ss {
+    opacity: 0;
+    transform: translateX(100px);
+    transition: all 0.8s ease-out;
+}
+
+.one_row.header-style.ss.show {
+    opacity: 1;
+    transform: translateX(0);
+}
+
+/* header style ss 2nd row */
+.one_row.header-style.sss {
+    opacity: 0;
+    transform: translateX(-100px);
+    transition: all 0.8s ease-out;
+}
+
+.one_row.header-style.sss.show {
+    opacity: 1;
+    transform: translateX(0);
+}
+
+.header-style.main.div {
+    overflow: hidden;
+}
+
+/* FLEXIBLE HEADER STYLE SECTION 5TH ENDS HERE */
+
+
+
+/* ORGANIC SHOP THEME SECTION 6TH BEGINS HERE LASTT!!!!!! */
+.thrive_with.orgainc-shop.theme {
+    opacity: 0;
+    transform: translateY(100px); /* left side se aaye */
+    transition: all 0.8s ease-out;
+}
+
+.thrive_with.orgainc-shop.theme.show {
+    opacity: 1;
+    transform: translateX(0);
+}
+
+
+/* ORGANIC SHOP THEME SECTION 6TH ENDS HERE LASTT!!!!!!!! */
